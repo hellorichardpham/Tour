@@ -3,48 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.0.1_27de0ea12a3037fed3f4c4f81e3d99520f600e24/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="26cd46f7bc6e1f269062b61269317a29329a9a7b">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-awareness-9.6.0_cb50c62b71799df5a898f22b13d0e1a24b560451/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
         <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_313628ca51f72fd7c0b6bfc8e997bd28edede924/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="bf803332f826adea247cc452d0bb04d7943f0007">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-9.6.0_16726cd7332f0ce69165abe56c52f5e636aff3cb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_868f0cfe139d6b3d1ccbeb72ac6685b47822fa29/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -57,42 +21,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a9f41e6463de88c3f979d796382fc24fb7e9cd41">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.6.0_aa850c7d56c16ea4515de933b1874ffa8cbf64e7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="415336382149f2a79eb80599e340e188f6724d6d">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-9.6.0_b0ef6c83993750d42bb039412fbe30797baf97ca/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f861fce2e9fa167e7fe8d8558cf2cbb910b9fb34">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.6.0_3cdb10b9c5ed4b07de98ca316dfe1c3da8eec53a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_7e790ca5db6f8715dbb5bd1292b2722b65593230/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -102,30 +30,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="5fef4ad8c5b2519596b80a241d56b69dffcd6845">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-9.6.0_3d3194230009db741bce46c1dc8b53827463b98d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="9f5c557145ddef094005eb73d72a7eaf330a0cf1">
         <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-9.6.0_8d4a4cc12ae2511c24b4251422cc302f7919cb74/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d57767271a9c140da143ec0db9a0673b6d96eccb">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-9.6.0_0746aca334d40b4d1956c83c4913d64471768f7a/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -147,15 +57,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a723c85825d9591baec200523c10662e30c8bed7">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.6.0_0789c573157cc842e7ea83fc4236c46577704fd6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -171,15 +72,6 @@
         revision="25.0.2"
         sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
         <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_bb7ce1409f9e5caa2cd8c67d9633b00a9505e196/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a723c85825d9591baec200523c10662e30c8bed7">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.6.0_ae1f3ed6f771df65ee1c0b551a1933766f6d7132/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -201,48 +93,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.flipboard/bottomsheet-core/1.5.3/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e9a4d49b97190d4490310827938d428c6fc996f4">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.flipboard-bottomsheet-core-1.5.3_30eeb3fbe5f6ddb884b6fa938fb263245ddcbe89/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="7357a05eea2a049c33488c7e8c6f887b3483d4b8">
         <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.6.0_b1513ed9bb55c8745f7e9d63e1e808099dc096dd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f89ca13d3e982913c6558708cf2ddbb163dfa97a">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_50c0e85e6979faa494dc44b66db1ee9f90f4b707/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d39f676be8400123523882d189a1d84040d34339">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.6.0_ed65e2831554dcc91e6db8012929d62f57f03b06/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="614b2ffd04818e865e1c02cc149c6b92e518e862">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.6.0_d7dcc62a63cc8e1335e324ff281c866abefd68b3/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -264,15 +120,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a917154cf730ea6ec2495705309e6a4065cde2ac">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-9.6.0_1a032ee3a8896eff22a9ec2d48329c04c11952b1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -291,66 +138,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6079f942bb34faee179b4c46396a26fbbfc43e5d">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-9.6.0_897bb43009bbe32575202175be90e76b5732a2a3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3270d392adef5decc7bace1a3c2e749bec7bf19e">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-9.6.0_33dd5798c75548581b8001e2053953c0879410c8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="266e4ac186afacc3b220a0cf8382348283b42407">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.6.0_630750fcc4d641ca5894190fee4b061c086313cd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
         <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_97c690c639ad41b8bc20846a1a118a4970affa98/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a5da6fc5a6f39aee309ae6ae670e1b942759dc51">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-9.6.0_51e028f9a6479a0a427882566ac3f1048e8cf6b0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a917154cf730ea6ec2495705309e6a4065cde2ac">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-9.6.0_3df8f6bacf14069b99714a4765ebfe9d63018a81/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="de2c50f4a24277d22d675d598640da6d4622b14d">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.6.0_da0f3a489383051c5b297c3f1eb6be93f497a363/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -372,39 +165,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c48db997d87eb3e3ad47713cfbfe7cb878a2e66c">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-9.6.0_88b61877a3a1b1fd0596e244fc6d74db0487b75c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_c3a75d954470f6d954ec82727fa2a5dbf0adf7a0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="d39f676be8400123523882d189a1d84040d34339">
         <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.6.0_9f40de5a74f59e455dc1fb4a04eac51ba0b53f20/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="300e72616fdf265bb36bff7adb1ebec7b1d72817">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-9.6.0_03c33472e63e1e7d13bcd6c49f12aa684de11dae/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -435,15 +201,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f2c9c986087e5862518757d0c988c8eac1a47bfd">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-9.6.0_5fa4cc662816a863dcaa1ba60389d9f93460cfac/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -459,15 +216,6 @@
         revision="25.0.2"
         sha1="d57767271a9c140da143ec0db9a0673b6d96eccb">
         <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-9.6.0_3795da879c5d7c79cf160904e10869041efda0cc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f6afcfbf1989631424f9ceaae6ee24777d3cf6ba">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.6.0_9922916c68fc272f7b60dd5d32e4f6786b1cf93b/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -570,15 +318,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_70352b876b8aa73011110fc6fba8030d8ba4a4e3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -615,39 +354,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_008e17c583f8935f5cfed248954eaa54a7884329/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.flipboard/bottomsheet-commons/1.5.3/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="92137af0a8a8623fa451a25beaffc4a9f22a8bb9">
         <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.flipboard-bottomsheet-commons-1.5.3_0931532f53448ea3441a6f2dfceb8a3f3712aaa2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="580fa73d5bf63ffd04b9d66d0e75a2ed21842702">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.6.0_1c8e9f31401ecd1f5cf9065a5531bbc025c335e9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_183075e935d81a07de9572611793cbf9537c4e12/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -660,66 +372,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6d16df2955bbd154b36819386cfd2e3b7f7cae5b">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-9.6.0_c59abec0117387ed4a817b57cd4c4c978bf10806/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4ab00b7d310cfdfff3a9446554485647153d0792">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-9.6.0_b1948f6dadb8f1bcf3eee26d93a1b107b7f0d8c9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-24.0.0_5b99ab2749300a2e1fcfe06c93fd658d9ca47b79/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="43ab9b69758a0f22706629223c367e9bd478e1a8">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-9.6.0_cbc5fef91330a8f5319c98062cc42ba14ea44000/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="12e94600a0ea3beae6ea0f1d18a0768ded5bc1ae">
         <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-9.6.0_cc90d52747770b8b23ba2015af575b7a4e8afe11/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ce5313bb5ccc0c1e10c995e4efb2f2b08c848b39">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.6.0_8d39c0bba3285f1fcd6472d93298276c0e1c51c3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_75bb4d87781fc6d7b8ecafe8d691d873f8cfa0e0/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -741,15 +399,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_06d99c1184c89e5a8e812e027355ed6c362aff91/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -759,84 +408,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ea5537e2a88ce0497d3e2272b1cf93f2e0c77b0d">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-9.6.0_3e320e2e3c0edcecc1e54d737c81abacef28c6ea/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ba2f029ff37297295d2d197ac6e957b361bfccaf">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.6.0_4bf0d051908cc1b07af6cefb9c63ed324fd3bad4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_2c0eebb22d19d815d4622a94c577a6d6035cdfe2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ba2f029ff37297295d2d197ac6e957b361bfccaf">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.6.0_2d250a764df4a846600325fc2f97258f23506c9a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_c85ce815c324c5045a00e7d256ac91fda4e49780/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="5e651c1430cc9b8a3b3b5a9d92bb173214dfdf42">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.6.0_ab6dfb18f55a680f44e290679f26258d29363217/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="938ba83fbb26987368049237e47718d56e91e222">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-9.6.0_d2eec9244ba2a326db36b6944f9b358d86eac821/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="bf803332f826adea247cc452d0bb04d7943f0007">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-9.6.0_268462926e91e8733575a0fe15a1f7da467364b9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a93aa431de60b775c91158433f3c687f1d32cb9c">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.6.0_d32bb6522b5223d5b2c9fd6d7b0d3d3e9f5795e4/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -876,48 +453,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0ef21408e3142ffbfbd4a7ec1762c3325c6c386c">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.6.0_190ba28d3434eff8d0473bdd10fdc289874240c5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4cfc5a74aa9453cbec685cdbcb3e3f3539b483bd">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.6.0_df1d6140201048cc085310a2906d380fe662b1a3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="232b731ffd2853cb4d9b8496111f53a80bbd9b26">
+        sha1="f102f84fd93d0936011d992bd3507dd8bb576615">
         <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f5b5cfc401ec8e6f7c8030826a5b0d3212991a0d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0ef21408e3142ffbfbd4a7ec1762c3325c6c386c">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.6.0_855c01d33f430d130bbc3457f76c031fad40b0eb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_4c91dd0348e7541d26498efb00d9374300b163a8/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -927,33 +468,6 @@
         revision="25.0.2"
         sha1="db0a4170961a16af6d7a5222bf90a5876eea4227">
         <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.6.0_c8cb23c11c4e84e3144ac1508523995b44bbfd48/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="bd11b3899f275668a9355f19cea2c2320f5f9d14">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.6.0_3e767f722a0ae2f751c6c45c0a5f81c970337a4f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="93a0248fe0524b4fa2d16f5f7c3cff8452796454">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.6.0_e1d1045726595e4010630b550c29be1564abceb3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="415336382149f2a79eb80599e340e188f6724d6d">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-9.6.0_aec1bc0df54a990f9f2bc3279c818f7048f5c0f1/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -990,6 +504,618 @@
         revision="25.0.2"
         sha1="734e80dffea7bd76c18ae256822a124c30d85850">
         <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-24.0.0_26cbae66c4afc51e359f3fb280c7391281abc645/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1f4bb2577a30d0b3268fed038ed59230709ad593">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.6.0_c13607bffc08844b2cf76e7ec8cd60630f90f42a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1bf2ceb0034efe20249a561096f6e288cce7a0a4">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-9.6.0_47872c259a5cef9dd036e09513d3268ef2f7061a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_98b2a2fec94c906284c90b458bfe0a36bae5cb9e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="db0a4170961a16af6d7a5222bf90a5876eea4227">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.6.0_711088bad85dde7fb31a75b3570b9f4b323ce824/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a93aa431de60b775c91158433f3c687f1d32cb9c">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.6.0_6ff8deb849581011e886814b04f8c7667ac31f94/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb96a230c7b55d545fbdee45157a5a75b2b26284">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-9.6.0_19577ad70dc0d960cf9e6a71ea21de3bcfb57822/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="de2c50f4a24277d22d675d598640da6d4622b14d">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.6.0_db850f4185c6c709dba233023491dd3d4137a647/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_a9f165dc8da4f027fa219798f1d5c1498e5f90e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a9f41e6463de88c3f979d796382fc24fb7e9cd41">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.6.0_0bb85dd691402ea322b98229334f7e6f8b9a2b7b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="53f7fbab5e6f4149eb5a1cdeabaeeeee11a84ebe">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-9.6.0_a625a353902ee1607a4a18095179fb6c93cfd1fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6d16df2955bbd154b36819386cfd2e3b7f7cae5b">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-9.6.0_07a2f99be15f66da612e6263227553e093c1a916/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="74d1712880eb2b4ab37ddf3c6a3232c883756726">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.6.0_1ae8902b7caaba8ccbe5b677f3b997812499a132/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d275ebf5470f45643d352018d3cf6b6e6ef34bc8">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_60178cc56a45d44abf72477d5b5b98fd71c92d38/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_e3bd2cdf9373efac2cc02f9a82deb58333a2a3d6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.0.1_27de0ea12a3037fed3f4c4f81e3d99520f600e24/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="26cd46f7bc6e1f269062b61269317a29329a9a7b">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-awareness-9.6.0_cb50c62b71799df5a898f22b13d0e1a24b560451/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf803332f826adea247cc452d0bb04d7943f0007">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-9.6.0_16726cd7332f0ce69165abe56c52f5e636aff3cb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_868f0cfe139d6b3d1ccbeb72ac6685b47822fa29/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a9f41e6463de88c3f979d796382fc24fb7e9cd41">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.6.0_aa850c7d56c16ea4515de933b1874ffa8cbf64e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="415336382149f2a79eb80599e340e188f6724d6d">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-9.6.0_b0ef6c83993750d42bb039412fbe30797baf97ca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f861fce2e9fa167e7fe8d8558cf2cbb910b9fb34">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.6.0_3cdb10b9c5ed4b07de98ca316dfe1c3da8eec53a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_7e790ca5db6f8715dbb5bd1292b2722b65593230/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5fef4ad8c5b2519596b80a241d56b69dffcd6845">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-9.6.0_3d3194230009db741bce46c1dc8b53827463b98d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d57767271a9c140da143ec0db9a0673b6d96eccb">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-9.6.0_0746aca334d40b4d1956c83c4913d64471768f7a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a723c85825d9591baec200523c10662e30c8bed7">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.6.0_0789c573157cc842e7ea83fc4236c46577704fd6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a723c85825d9591baec200523c10662e30c8bed7">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.6.0_ae1f3ed6f771df65ee1c0b551a1933766f6d7132/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.flipboard/bottomsheet-core/1.5.3/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e9a4d49b97190d4490310827938d428c6fc996f4">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.flipboard-bottomsheet-core-1.5.3_30eeb3fbe5f6ddb884b6fa938fb263245ddcbe89/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="749ca20a0214a06c2c367111f5b6c6899d4af1f1">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_50c0e85e6979faa494dc44b66db1ee9f90f4b707/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d39f676be8400123523882d189a1d84040d34339">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.6.0_ed65e2831554dcc91e6db8012929d62f57f03b06/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="614b2ffd04818e865e1c02cc149c6b92e518e862">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.6.0_d7dcc62a63cc8e1335e324ff281c866abefd68b3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a917154cf730ea6ec2495705309e6a4065cde2ac">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-9.6.0_1a032ee3a8896eff22a9ec2d48329c04c11952b1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6079f942bb34faee179b4c46396a26fbbfc43e5d">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-9.6.0_897bb43009bbe32575202175be90e76b5732a2a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3270d392adef5decc7bace1a3c2e749bec7bf19e">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-9.6.0_33dd5798c75548581b8001e2053953c0879410c8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="266e4ac186afacc3b220a0cf8382348283b42407">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.6.0_630750fcc4d641ca5894190fee4b061c086313cd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a5da6fc5a6f39aee309ae6ae670e1b942759dc51">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-9.6.0_51e028f9a6479a0a427882566ac3f1048e8cf6b0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a917154cf730ea6ec2495705309e6a4065cde2ac">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-9.6.0_3df8f6bacf14069b99714a4765ebfe9d63018a81/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="de2c50f4a24277d22d675d598640da6d4622b14d">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.6.0_da0f3a489383051c5b297c3f1eb6be93f497a363/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c48db997d87eb3e3ad47713cfbfe7cb878a2e66c">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-9.6.0_88b61877a3a1b1fd0596e244fc6d74db0487b75c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_c3a75d954470f6d954ec82727fa2a5dbf0adf7a0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="300e72616fdf265bb36bff7adb1ebec7b1d72817">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-9.6.0_03c33472e63e1e7d13bcd6c49f12aa684de11dae/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f2c9c986087e5862518757d0c988c8eac1a47bfd">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-9.6.0_5fa4cc662816a863dcaa1ba60389d9f93460cfac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f6afcfbf1989631424f9ceaae6ee24777d3cf6ba">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.6.0_9922916c68fc272f7b60dd5d32e4f6786b1cf93b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_70352b876b8aa73011110fc6fba8030d8ba4a4e3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_008e17c583f8935f5cfed248954eaa54a7884329/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="580fa73d5bf63ffd04b9d66d0e75a2ed21842702">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.6.0_1c8e9f31401ecd1f5cf9065a5531bbc025c335e9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_183075e935d81a07de9572611793cbf9537c4e12/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6d16df2955bbd154b36819386cfd2e3b7f7cae5b">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-9.6.0_c59abec0117387ed4a817b57cd4c4c978bf10806/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4ab00b7d310cfdfff3a9446554485647153d0792">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-9.6.0_b1948f6dadb8f1bcf3eee26d93a1b107b7f0d8c9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-24.0.0_5b99ab2749300a2e1fcfe06c93fd658d9ca47b79/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="43ab9b69758a0f22706629223c367e9bd478e1a8">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-9.6.0_cbc5fef91330a8f5319c98062cc42ba14ea44000/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ce5313bb5ccc0c1e10c995e4efb2f2b08c848b39">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.6.0_8d39c0bba3285f1fcd6472d93298276c0e1c51c3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_75bb4d87781fc6d7b8ecafe8d691d873f8cfa0e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_06d99c1184c89e5a8e812e027355ed6c362aff91/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea5537e2a88ce0497d3e2272b1cf93f2e0c77b0d">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-9.6.0_3e320e2e3c0edcecc1e54d737c81abacef28c6ea/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ba2f029ff37297295d2d197ac6e957b361bfccaf">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.6.0_4bf0d051908cc1b07af6cefb9c63ed324fd3bad4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_2c0eebb22d19d815d4622a94c577a6d6035cdfe2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ba2f029ff37297295d2d197ac6e957b361bfccaf">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.6.0_2d250a764df4a846600325fc2f97258f23506c9a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5e651c1430cc9b8a3b3b5a9d92bb173214dfdf42">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.6.0_ab6dfb18f55a680f44e290679f26258d29363217/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="938ba83fbb26987368049237e47718d56e91e222">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-9.6.0_d2eec9244ba2a326db36b6944f9b358d86eac821/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf803332f826adea247cc452d0bb04d7943f0007">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-9.6.0_268462926e91e8733575a0fe15a1f7da467364b9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a93aa431de60b775c91158433f3c687f1d32cb9c">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.6.0_d32bb6522b5223d5b2c9fd6d7b0d3d3e9f5795e4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0ef21408e3142ffbfbd4a7ec1762c3325c6c386c">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.6.0_190ba28d3434eff8d0473bdd10fdc289874240c5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4cfc5a74aa9453cbec685cdbcb3e3f3539b483bd">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.6.0_df1d6140201048cc085310a2906d380fe662b1a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0ef21408e3142ffbfbd4a7ec1762c3325c6c386c">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.6.0_855c01d33f430d130bbc3457f76c031fad40b0eb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_4c91dd0348e7541d26498efb00d9374300b163a8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bd11b3899f275668a9355f19cea2c2320f5f9d14">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.6.0_3e767f722a0ae2f751c6c45c0a5f81c970337a4f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93a0248fe0524b4fa2d16f5f7c3cff8452796454">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.6.0_e1d1045726595e4010630b550c29be1564abceb3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="415336382149f2a79eb80599e340e188f6724d6d">
+        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-9.6.0_aec1bc0df54a990f9f2bc3279c818f7048f5c0f1/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -1056,15 +1182,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1f4bb2577a30d0b3268fed038ed59230709ad593">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.6.0_c13607bffc08844b2cf76e7ec8cd60630f90f42a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -1074,57 +1191,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1bf2ceb0034efe20249a561096f6e288cce7a0a4">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-9.6.0_47872c259a5cef9dd036e09513d3268ef2f7061a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_98b2a2fec94c906284c90b458bfe0a36bae5cb9e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="db0a4170961a16af6d7a5222bf90a5876eea4227">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.6.0_711088bad85dde7fb31a75b3570b9f4b323ce824/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="f2c9c986087e5862518757d0c988c8eac1a47bfd">
         <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-9.6.0_02777c6a0f59d3f9102455479e8f71e464eeb78a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a93aa431de60b775c91158433f3c687f1d32cb9c">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.6.0_6ff8deb849581011e886814b04f8c7667ac31f94/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="eb96a230c7b55d545fbdee45157a5a75b2b26284">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-9.6.0_19577ad70dc0d960cf9e6a71ea21de3bcfb57822/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -1182,24 +1254,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="de2c50f4a24277d22d675d598640da6d4622b14d">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.6.0_db850f4185c6c709dba233023491dd3d4137a647/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_a9f165dc8da4f027fa219798f1d5c1498e5f90e8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -1227,24 +1281,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a9f41e6463de88c3f979d796382fc24fb7e9cd41">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.6.0_0bb85dd691402ea322b98229334f7e6f8b9a2b7b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="53f7fbab5e6f4149eb5a1cdeabaeeeee11a84ebe">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-9.6.0_a625a353902ee1607a4a18095179fb6c93cfd1fd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -1254,39 +1290,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6d16df2955bbd154b36819386cfd2e3b7f7cae5b">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-9.6.0_07a2f99be15f66da612e6263227553e093c1a916/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="74d1712880eb2b4ab37ddf3c6a3232c883756726">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.6.0_1ae8902b7caaba8ccbe5b677f3b997812499a132/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="53f7fbab5e6f4149eb5a1cdeabaeeeee11a84ebe">
         <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-9.6.0_864860bb38bd07de9e2e9d43a9f25548948b9175/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d275ebf5470f45643d352018d3cf6b6e6ef34bc8">
-        <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_60178cc56a45d44abf72477d5b5b98fd71c92d38/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -1314,15 +1323,6 @@
         revision="25.0.2"
         sha1="7357a05eea2a049c33488c7e8c6f887b3483d4b8">
         <dex dex="/Users/dylantieu/Desktop/gotchobooks-master/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.6.0_b5c41a30d96103e3e63c6f5266294d81715a5750/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
-        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_e3bd2cdf9373efac2cc02f9a82deb58333a2a3d6/classes.dex" />
     </item>
 
 </items>
