@@ -89,6 +89,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         roomInformation[8] = c.getString(latitude);
         roomInformation[9] = c.getString(longitude);
      */
+
     @Override
     public boolean onMarkerClick(final Marker marker) {
         View parentView;
@@ -225,11 +226,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Game Design - HUE_AZURE
          */
 
+        //BitmapDescriptorFactory.HUE_AZURE;
+        //BitmapDescriptorFactory.HUE_VIOLET;
+        //BitmapDescriptorFactory.HUE_GREEN
+        //BitmapDescriptorFactory.MAGENTA
+        //BitmapDescriptorFactory.ORANGE
+        //BitmapDescriptorFactory.HUE_RED; //Default
+
+
 
         Cursor c = myDB.rawQuery("SELECT * FROM " + TableName, null);
         String[] roomInformation = new String[c.getColumnCount()];
         ArrayList<Marker> listOfMarkers = new ArrayList<>();
-
+        float colorOfMarker;
         while (c.moveToNext()) {
             int idIndex = c.getColumnIndex("id");
             int titleIndex = c.getColumnIndex("title");
@@ -241,13 +250,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             String title = c.getString(titleIndex);
             String latitude = c.getString(latitudeIndex);
             String longitude = c.getString(longitudeIndex);
+            String major = c.getString(majorIndex);
+            colorOfMarker = getMarkerColor(major);
 
             int tag = Integer.parseInt(id);
             double lat = Double.parseDouble(latitude);
             double lon = Double.parseDouble(longitude);
             LatLng latLong = new LatLng(lat, lon);
 
-            Marker marker =  mMap.addMarker(new MarkerOptions().position(latLong).title(title));
+            Marker marker =  mMap.addMarker(new MarkerOptions().position(latLong).title(title).icon(BitmapDescriptorFactory.defaultMarker(colorOfMarker)));
             marker.setTag(tag);
 
             listOfMarkers.add(marker);
@@ -255,6 +266,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         for(int i = 0; i < listOfMarkers.size(); i++) {
             System.out.printf("Marker Title: %s Marker Tag: %d\n", listOfMarkers.get(i).getTitle(), listOfMarkers.get(i).getTag());
+        }
+    }
+
+    private float getMarkerColor(String major) {
+        switch(major) {
+            case "Computer Science":
+                return BitmapDescriptorFactory.HUE_RED;
+            case "Computer Engineering":
+                return BitmapDescriptorFactory.HUE_AZURE;
+            case "Electrical Engineering":
+                return BitmapDescriptorFactory.HUE_GREEN;
+            case "Computer Science Game Design":
+                return BitmapDescriptorFactory.HUE_MAGENTA;
+            default:
+                return BitmapDescriptorFactory.HUE_RED;
         }
     }
 
