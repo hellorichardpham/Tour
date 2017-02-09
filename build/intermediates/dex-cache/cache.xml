@@ -457,7 +457,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="f102f84fd93d0936011d992bd3507dd8bb576615">
+        sha1="e1e558b9e57b2c9e3494276c9d23f9cdf2327e74">
         <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f5b5cfc401ec8e6f7c8030826a5b0d3212991a0d/classes.dex" />
     </item>
     <item
@@ -754,7 +754,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="749ca20a0214a06c2c367111f5b6c6899d4af1f1">
+        sha1="5c93351d89789e9d77f141f4ad48a809d5d64115">
         <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_50c0e85e6979faa494dc44b66db1ee9f90f4b707/classes.dex" />
     </item>
     <item
