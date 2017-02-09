@@ -100,85 +100,23 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         for(int i = 0; i < roomInformation.length; i++) {
             System.out.printf("RoomInformation[%d]: %s\n", i, roomInformation[i]);
         }
-        switch(tag) {
-            case 0:
-                bs.showWithSheetView(LayoutInflater.from(this).inflate(R.layout.bottom_test, bs, false));
-                parentView = bs.getSheetView();
+        bs.showWithSheetView(LayoutInflater.from(this).inflate(R.layout.bottom_test, bs, false));
+        parentView = bs.getSheetView();
 
-                markerTitle = (TextView) parentView.findViewById(R.id.textViewTitle);
-                markerLocation = (TextView) parentView.findViewById(R.id.textViewLocation);
-                markerMajor = (TextView) parentView.findViewById(R.id.textViewMajor);
-                markerDescription1 = (TextView) parentView.findViewById(R.id.textViewDescription1);
-                markerDescription2 = (TextView) parentView.findViewById(R.id.textViewDescription2);
-                markerDescription3 = (TextView) parentView.findViewById(R.id.textViewDescription3);
+        markerTitle = (TextView) parentView.findViewById(R.id.textViewTitle);
+        markerLocation = (TextView) parentView.findViewById(R.id.textViewLocation);
+        markerMajor = (TextView) parentView.findViewById(R.id.textViewMajor);
+        markerDescription1 = (TextView) parentView.findViewById(R.id.textViewDescription1);
+        markerDescription2 = (TextView) parentView.findViewById(R.id.textViewDescription2);
+        markerDescription3 = (TextView) parentView.findViewById(R.id.textViewDescription3);
 
-                markerTitle.setText(roomInformation[1]);
-                markerLocation.setText(roomInformation[2]);
-                markerMajor.setText(roomInformation[3]);
-                markerDescription1.setText(roomInformation[5]);
-                markerDescription2.setText(roomInformation[6]);
-                markerDescription3.setText(roomInformation[7]);
+        markerTitle.setText(roomInformation[1]);
+        markerLocation.setText(roomInformation[2]);
+        markerMajor.setText(roomInformation[3]);
+        markerDescription1.setText(roomInformation[5]);
+        markerDescription2.setText(roomInformation[6]);
+        markerDescription3.setText(roomInformation[7]);
 
-                break;
-            case 1:
-                bs.showWithSheetView(LayoutInflater.from(this).inflate(R.layout.bottom_test, bs, false));
-                parentView = bs.getSheetView();
-
-                markerTitle = (TextView) parentView.findViewById(R.id.textViewTitle);
-                markerLocation = (TextView) parentView.findViewById(R.id.textViewLocation);
-                markerMajor = (TextView) parentView.findViewById(R.id.textViewMajor);
-                markerDescription1 = (TextView) parentView.findViewById(R.id.textViewDescription1);
-                markerDescription2 = (TextView) parentView.findViewById(R.id.textViewDescription2);
-                markerDescription3 = (TextView) parentView.findViewById(R.id.textViewDescription3);
-
-                markerTitle.setText(roomInformation[1]);
-                markerLocation.setText(roomInformation[2]);
-                markerMajor.setText(roomInformation[3]);
-                markerDescription1.setText(roomInformation[5]);
-                markerDescription2.setText(roomInformation[6]);
-                markerDescription3.setText(roomInformation[7]);
-
-                break;
-            case 2:
-                bs.showWithSheetView(LayoutInflater.from(this).inflate(R.layout.bottom_test, bs, false));
-                parentView = bs.getSheetView();
-
-                markerTitle = (TextView) parentView.findViewById(R.id.textViewTitle);
-                markerLocation = (TextView) parentView.findViewById(R.id.textViewLocation);
-                markerMajor = (TextView) parentView.findViewById(R.id.textViewMajor);
-                markerDescription1 = (TextView) parentView.findViewById(R.id.textViewDescription1);
-                markerDescription2 = (TextView) parentView.findViewById(R.id.textViewDescription2);
-                markerDescription3 = (TextView) parentView.findViewById(R.id.textViewDescription3);
-
-                markerTitle.setText(roomInformation[1]);
-                markerLocation.setText(roomInformation[2]);
-                markerMajor.setText(roomInformation[3]);
-                //image is in [4]
-                markerDescription1.setText(roomInformation[5]);
-                markerDescription2.setText(roomInformation[6]);
-                markerDescription3.setText(roomInformation[7]);
-
-                break;
-            case 3:
-                bs.showWithSheetView(LayoutInflater.from(this).inflate(R.layout.bottom_test, bs, false));
-                parentView = bs.getSheetView();
-
-                markerTitle = (TextView) parentView.findViewById(R.id.textViewTitle);
-                markerLocation = (TextView) parentView.findViewById(R.id.textViewLocation);
-                markerMajor = (TextView) parentView.findViewById(R.id.textViewMajor);
-                markerDescription1 = (TextView) parentView.findViewById(R.id.textViewDescription1);
-                markerDescription2 = (TextView) parentView.findViewById(R.id.textViewDescription2);
-                markerDescription3 = (TextView) parentView.findViewById(R.id.textViewDescription3);
-
-                markerTitle.setText(roomInformation[1]);
-                markerLocation.setText(roomInformation[2]);
-                markerMajor.setText(roomInformation[3]);
-                markerDescription1.setText(roomInformation[5]);
-                markerDescription2.setText(roomInformation[6]);
-                markerDescription3.setText(roomInformation[7]);
-
-                break;
-        }
         // Return false to indicate that we have not consumed the event and that we wish
         // for the default behavior to occur (which is for the camera to move such that the
         // marker is centered and for the marker's info window to open, if it has one).
@@ -198,20 +136,34 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description1, description2, description3, latitude, longitude)"
-                    + " VALUES (0,'BE 105: Computer Lab', 'Baskin Engineering 1 Room 105', 'Computer Science', 'emptyImage', '105 description1', '105 description2', '105 description3', 37.0002225, -122.063148);");
+                    + " VALUES (0,'BE 105: Computer Lab', 'Baskin Engineering 1 Room 105', 'Computer Science', " +
+                    "'emptyImage', '105 description1', '105 description2', '105 description3', 37.0002225, -122.063148);");
 
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description1, description2, description3, latitude, longitude)"
-                    + " VALUES (1,'BE 300: Game Design Lab', 'Baskin Engineering 1 Room 300', 'Computer Science Game Design', 'emptyImage', '300 description1', '300 description2', '300 description3', '37.000419', '-122.062715');");
+                    + " VALUES (1,'BE 300: Game Design Lab', 'Baskin Engineering 1 Room 300', 'Computer Science Game Design', " +
+                    "'emptyImage', '300 description1', '300 description2', '300 description3', '37.000419', '-122.062715');");
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description1, description2, description3, latitude, longitude)"
-                    + " VALUES (2,'BE 115: Mechatronics Lab', 'Baskin Engineering 1 Room 115', 'Computer Engineering', 'emptyImage', '115 description1', '115 description2', '115 description3', '37.000183', '-122.063545');");
+                    + " VALUES (2,'BE 115: Mechatronics Lab', 'Baskin Engineering 1 Room 115', 'Computer Engineering', " +
+                    "'emptyImage', '115 description1', '115 description2', '115 description3', '37.000183', '-122.063545');");
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description1, description2, description3, latitude, longitude)"
-                    + " VALUES (3,'BE xxx: Electrical Engineering 101 Lab', 'Baskin Engineering 1 Room xxx', 'Electrical Engineering', 'emptyImage', 'xxx description1', 'xxx description2', 'xxx description3', '37.000358', '-122.063413');");
+                    + " VALUES (3,'BE xxx: Electrical Engineering 101 Lab', 'Baskin Engineering 1 Room xxx', 'Electrical Engineering', " +
+                    "'emptyImage', 'xxx description1', 'xxx description2', 'xxx description3', '37.000358', '-122.063413');");
+            myDB.execSQL("INSERT INTO "
+                    + TableName
+                    + " (id, title, location, major, image, description1, description2, description3, latitude, longitude)"
+                    + " VALUES (4,'Graduate Advising Office', 'Oakes Academic Building, Room 221', 'Graduate Division', " +
+                    "'emptyImage', 'Graduate description1', 'Graduate description2', 'Graduate description3', '36.9896204', '-122.0649923');");
+            myDB.execSQL("INSERT INTO "
+                    + TableName
+                    + " (id, title, location, major, image, description1, description2, description3, latitude, longitude)"
+                    + " VALUES (5,'Graduate Student Housing', '', 'Graduate Division', " +
+                    "'emptyImage', 'Graduate Housing description1', 'Graduate Housing description2', 'Graduate Housing description3', '37.0000333', '-122.0642744');");
             System.out.println("Done inserting");
         } catch(Exception e) {
             System.out.println(e.getLocalizedMessage());
@@ -279,6 +231,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 return BitmapDescriptorFactory.HUE_GREEN;
             case "Computer Science Game Design":
                 return BitmapDescriptorFactory.HUE_MAGENTA;
+            case "Graduate Division":
+                return BitmapDescriptorFactory.HUE_YELLOW;
             default:
                 return BitmapDescriptorFactory.HUE_RED;
         }
