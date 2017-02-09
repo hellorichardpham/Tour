@@ -2,8 +2,10 @@ package com.example.julu.tourbeta;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.location.LocationManager;
 import android.support.design.widget.BottomSheetBehavior;
@@ -14,6 +16,7 @@ import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -35,6 +38,7 @@ import com.google.android.gms.vision.text.Text;
 
 import java.util.ArrayList;
 
+import static android.R.attr.id;
 import static com.example.julu.tourbeta.R.drawable.be105;
 import static com.example.julu.tourbeta.R.id.bottomsheet;
 import static com.example.julu.tourbeta.R.id.bottomtest;
@@ -94,6 +98,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public boolean onMarkerClick(final Marker marker) {
         View parentView;
         TextView markerTitle, markerLocation, markerMajor, markerDescription1, markerDescription2, markerDescription3;
+        ImageView markerImage;
         // Retrieve the data from the marker.
         Integer tag = (Integer) marker.getTag();
         String[] roomInformation = retrieveRoomInformation(myDB, TableName, tag);
@@ -106,6 +111,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         markerTitle = (TextView) parentView.findViewById(R.id.textViewTitle);
         markerLocation = (TextView) parentView.findViewById(R.id.textViewLocation);
         markerMajor = (TextView) parentView.findViewById(R.id.textViewMajor);
+        markerImage = (ImageView) parentView.findViewById(R.id.imageViewImage);
+
+        if(!roomInformation[4].equals("emptyImage")) {
+
+            int id = getResources().getIdentifier("com.example.julu.tourbeta:drawable/graduatehousing", null, null);
+            markerImage.setImageResource(id);
+            System.out.println("After image " + markerImage.getDrawable());
+        }
+
         markerDescription1 = (TextView) parentView.findViewById(R.id.textViewDescription1);
         markerDescription2 = (TextView) parentView.findViewById(R.id.textViewDescription2);
         markerDescription3 = (TextView) parentView.findViewById(R.id.textViewDescription3);
@@ -116,6 +130,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         markerDescription1.setText(roomInformation[5]);
         markerDescription2.setText(roomInformation[6]);
         markerDescription3.setText(roomInformation[7]);
+
 
         // Return false to indicate that we have not consumed the event and that we wish
         // for the default behavior to occur (which is for the camera to move such that the
@@ -163,7 +178,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     + TableName
                     + " (id, title, location, major, image, description1, description2, description3, latitude, longitude)"
                     + " VALUES (5,'Graduate Student Housing', '', 'Graduate Division', " +
-                    "'emptyImage', 'Graduate Housing description1', 'Graduate Housing description2', 'Graduate Housing description3', '37.0000333', '-122.0642744');");
+                    "'graduatehousing.jpg', 'Graduate Housing description1', 'Graduate Housing description2', 'Graduate Housing description3', '37.0000333', '-122.0642744');");
             System.out.println("Done inserting");
         } catch(Exception e) {
             System.out.println(e.getLocalizedMessage());
