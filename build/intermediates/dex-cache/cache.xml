@@ -232,7 +232,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="5edd2ccfc2852d5ab63fdef5cf867b93d3e36958">
+        sha1="b1e0e7307b8623df67ff53775fb2b8537426aa22">
         <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_50c0e85e6979faa494dc44b66db1ee9f90f4b707/classes.dex" />
     </item>
     <item
@@ -286,7 +286,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="dcff41a844265fb74dcb54f7969820009497b7c9">
+        sha1="f6dec38fb11039c9d32f589ed8c5922999010582">
         <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f5b5cfc401ec8e6f7c8030826a5b0d3212991a0d/classes.dex" />
     </item>
     <item
@@ -387,6 +387,15 @@
         revision="25.0.2"
         sha1="614b2ffd04818e865e1c02cc149c6b92e518e862">
         <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.6.0_0452c40a797bd30de6ab4835b77f2878a4887504/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.ms-square/expandableTextView/0.1.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b305cfd7ae732d7c146fe3046aea90f877c3892b">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.ms-square-expandableTextView-0.1.4_0492f5367d1d682132a8ea5cf17f5e5e1238c938/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -657,6 +666,15 @@
         revision="25.0.2"
         sha1="4ab00b7d310cfdfff3a9446554485647153d0792">
         <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-9.6.0_a5668c45dc3cba66aebc858e85a46ea5b2cda544/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.getbase/floatingactionbutton/1.10.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f40cf334cdc8b098b74312e21c7741c6eefbeb0e">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.getbase-floatingactionbutton-1.10.1_570640bc45291801b80cb81b4117ec6fe150aed7/classes.dex" />
     </item>
     <item
         is-multidex="true"

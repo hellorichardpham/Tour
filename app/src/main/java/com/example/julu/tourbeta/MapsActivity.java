@@ -5,7 +5,9 @@ import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
 import android.support.design.widget.BottomSheetBehavior;
@@ -13,6 +15,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -23,6 +26,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.flipboard.bottomsheet.BottomSheetLayout;
+import com.getbase.floatingactionbutton.FloatingActionButton;
+import com.getbase.floatingactionbutton.FloatingActionsMenu;
+import com.google.android.gms.analytics.ExceptionParser;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationServices;
@@ -35,6 +41,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.vision.text.Text;
+import com.ms.square.android.expandabletextview.ExpandableTextView;
 
 import java.util.ArrayList;
 
@@ -44,6 +51,7 @@ import static com.example.julu.tourbeta.R.id.bottomsheet;
 import static com.example.julu.tourbeta.R.id.bottomtest;
 import static com.example.julu.tourbeta.R.id.list;
 import static com.example.julu.tourbeta.R.id.textViewMajor;
+import static com.google.android.gms.maps.model.BitmapDescriptorFactory.HUE_AZURE;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,
         LocationListener, GoogleMap.OnMarkerClickListener{
@@ -53,18 +61,37 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private BottomSheetLayout bs;
     private SQLiteDatabase myDB = null;
     private String TableName = "testdb4";
+    private ExpandableTextView expandableText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
 
+        setupBottomSheet();
+        setupDatabase();
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        setupBottomSheet();
-        setupDatabase();
+
+        // Getting LocationManager object from System Service LOCATION_SERVICE
+        LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+
+/*        View parentView = bs.getSheetView();
+
+        FloatingActionsMenu rightLabels = (FloatingActionsMenu) parentView.findViewById(R.id.multiple_layout)
+                .findViewById(R.id.multiple_actions);
+        FloatingActionButton addedOnce = new FloatingActionButton(this);
+        addedOnce.setTitle("Computer Science");
+        rightLabels.addButton(addedOnce);
+
+        FloatingActionButton addedTwice = new FloatingActionButton(this);
+        addedTwice.setTitle("Computer Engineering");
+        rightLabels.addButton(addedTwice);
+        rightLabels.removeButton(addedTwice);
+        rightLabels.addButton(addedTwice);
+*/
 
     }
 
@@ -87,9 +114,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         roomInformation[2] = c.getString(locationIndex);
         roomInformation[3] = c.getString(majorindex);
         roomInformation[4] = c.getString(imageIndex);
-        roomInformation[5] = c.getString(description1Index);
-        roomInformation[6] = c.getString(description2Index);
-        roomInformation[7] = c.getString(description3Index);
+        roomInformation[5] = c.getString(descriptionIndex);
         roomInformation[8] = c.getString(latitude);
         roomInformation[9] = c.getString(longitude);
      */
@@ -97,44 +122,64 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public boolean onMarkerClick(final Marker marker) {
         View parentView;
-        TextView markerTitle, markerLocation, markerMajor, markerDescription1, markerDescription2, markerDescription3;
+        TextView markerTitle, markerLocation, markerMajor;
+        RelativeLayout peekLayout;
         ImageView markerImage;
         // Retrieve the data from the marker.
         Integer tag = (Integer) marker.getTag();
         String[] roomInformation = retrieveRoomInformation(myDB, TableName, tag);
-        for(int i = 0; i < roomInformation.length; i++) {
-            System.out.printf("RoomInformation[%d]: %s\n", i, roomInformation[i]);
-        }
+
         bs.showWithSheetView(LayoutInflater.from(this).inflate(R.layout.bottom_test, bs, false));
         parentView = bs.getSheetView();
+
 
         markerTitle = (TextView) parentView.findViewById(R.id.textViewTitle);
         markerLocation = (TextView) parentView.findViewById(R.id.textViewLocation);
         markerMajor = (TextView) parentView.findViewById(R.id.textViewMajor);
         markerImage = (ImageView) parentView.findViewById(R.id.imageViewImage);
 
-        if(!roomInformation[4].equals("emptyImage")) {
+        //peekLayout = (RelativeLayout) findViewById(R.id.peekLayout);
 
-            int id = getResources().getIdentifier("com.example.julu.tourbeta:drawable/graduatehousing", null, null);
-            markerImage.setImageResource(id);
-            System.out.println("After image " + markerImage.getDrawable());
-        }
+        //peekLayout.setBackgroundDrawable(Drawable d);
+        //peekLayout.setBackgroundResource(int resid);
 
-        markerDescription1 = (TextView) parentView.findViewById(R.id.textViewDescription1);
-        markerDescription2 = (TextView) parentView.findViewById(R.id.textViewDescription2);
-        markerDescription3 = (TextView) parentView.findViewById(R.id.textViewDescription3);
+        //String color = getMarkerColor(markerMajor.getText().toString());
+        //peekLayout.setBackgroundColor(Color.parseColor());
+
+        String imageFileName = roomInformation[4];
+        String imageFilePath = "com.example.julu.tourbeta:drawable/" + imageFileName;
+
+        int id = getResources().getIdentifier(imageFilePath, null, null);
+        markerImage.setImageResource(id);
+        System.out.println("After image " + markerImage.getDrawable());
 
         markerTitle.setText(roomInformation[1]);
         markerLocation.setText(roomInformation[2]);
         markerMajor.setText(roomInformation[3]);
-        markerDescription1.setText(roomInformation[5]);
-        markerDescription2.setText(roomInformation[6]);
-        markerDescription3.setText(roomInformation[7]);
 
+        // sample code snippet to set the text content on the ExpandableTextView
+        expandableText = (ExpandableTextView) parentView.findViewById(R.id.expand_text_view)
+                .findViewById(R.id.expand_text_view);
 
+        // IMPORTANT - call setText on the ExpandableTextView to set the text content to display
+        expandableText.setText(roomInformation[5]);
         // Return false to indicate that we have not consumed the event and that we wish
         // for the default behavior to occur (which is for the camera to move such that the
         // marker is centered and for the marker's info window to open, if it has one).
+
+/*
+        FloatingActionsMenu rightLabels = (FloatingActionsMenu) parentView.findViewById(R.id.multiple_layout)
+                .findViewById(R.id.multiple_actions);
+        FloatingActionButton addedOnce = new FloatingActionButton(this);
+        addedOnce.setTitle("Computer Science");
+        rightLabels.addButton(addedOnce);
+
+        FloatingActionButton addedTwice = new FloatingActionButton(this);
+        addedTwice.setTitle("Computer Engineering");
+        rightLabels.addButton(addedTwice);
+        rightLabels.removeButton(addedTwice);
+        rightLabels.addButton(addedTwice);
+*/
         return false;
     }
 
@@ -146,39 +191,69 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             myDB.execSQL("CREATE TABLE IF NOT EXISTS "
                     + TableName
                     + " (id INT(2), title VARCHAR(30), location VARCHAR(50), major VARCHAR(30), " +
-                    "image VARCHAR(200), description1 VARCHAR(200), description2 VARCHAR(200), description3 VARCHAR(200), latitude VARCHAR(15), longitude VARCHAR(15));");
+                    "image VARCHAR(200), description VARCHAR(1000), latitude VARCHAR(15), longitude VARCHAR(15));");
 
             myDB.execSQL("INSERT INTO "
                     + TableName
-                    + " (id, title, location, major, image, description1, description2, description3, latitude, longitude)"
+                    + " (id, title, location, major, image, description, latitude, longitude)"
                     + " VALUES (0,'BE 105: Computer Lab', 'Baskin Engineering 1 Room 105', 'Computer Science', " +
-                    "'emptyImage', '105 description1', '105 description2', '105 description3', 37.0002225, -122.063148);");
+                    "'be105', '105 description1', 37.0002225, -122.063148);");
 
             myDB.execSQL("INSERT INTO "
                     + TableName
-                    + " (id, title, location, major, image, description1, description2, description3, latitude, longitude)"
-                    + " VALUES (1,'BE 300: Game Design Lab', 'Baskin Engineering 1 Room 300', 'Computer Science Game Design', " +
-                    "'emptyImage', '300 description1', '300 description2', '300 description3', '37.000419', '-122.062715');");
+                    + " (id, title, location, major, image, description, latitude, longitude)"
+                    + " VALUES (1,'BE 368: Game Design Lab', 'Baskin Engineering 1 Room 368', 'Computer Science Game Design', " +
+                    "'defaultimage'," +
+                    " 'The Game Lab is among the most distinctive teaching labs at UC Santa Cruz. Here, undergraduate game majors work in teams of 4 to 15 students to create a substantial computer game over their entire senior year. " +
+                    "\n\nGame Lab games have won awards at game festivals such as IndieCade and the Google Play Indie Games awards, and are publicly released on platforms such as Itch.io, the Apple App Store, and the Google Play Store. " +
+                    "\n\nThe lab features high end computer workstations with VR-capable graphics cards and dual monitors, virtual reality headsets, game prototyping supplies, a sound studio, an extensive library of books on game topics, and multiple team meeting spaces.'," +
+                    " '37.000419', '-122.062715');");
             myDB.execSQL("INSERT INTO "
                     + TableName
-                    + " (id, title, location, major, image, description1, description2, description3, latitude, longitude)"
+                    + " (id, title, location, major, image, description, latitude, longitude)"
                     + " VALUES (2,'BE 115: Mechatronics Lab', 'Baskin Engineering 1 Room 115', 'Computer Engineering', " +
-                    "'emptyImage', '115 description1', '115 description2', '115 description3', '37.000183', '-122.063545');");
+                    "'defaultimage', '115 description1', '37.000189', '-122.063545');");
             myDB.execSQL("INSERT INTO "
                     + TableName
-                    + " (id, title, location, major, image, description1, description2, description3, latitude, longitude)"
-                    + " VALUES (3,'BE xxx: Electrical Engineering 101 Lab', 'Baskin Engineering 1 Room xxx', 'Electrical Engineering', " +
-                    "'emptyImage', 'xxx description1', 'xxx description2', 'xxx description3', '37.000358', '-122.063413');");
+                    + " (id, title, location, major, image, description, latitude, longitude)"
+                    + " VALUES (3,'BE 150: Electrical Engineering 101 Lab', 'Baskin Engineering 1 Room 150', 'Electrical Engineering', " +
+                    "'be150'," +
+                    "'The circuits lab (Baskin 150) is used for beginning instruction in analog electronics, both for EE 101/L (Circuits) and BME 51A+B (Applied Electronics for Bioengineers). " +
+                    "\n\nThe class shown here is one section of BME 51A, doing their first amplifier lab: building an instrumentation amplifier for a pressure sensor for measuring air pressure in a blood-pressure cuff. " +
+                    "\n\nAll the bioengineering concentrations are required to do BME 51, as it provides a relatively quick way to gain practical engineering design experience and to understand the basics of interfacing biological systems to computers.'," +
+                    "'37.000358', '-122.063413');");
             myDB.execSQL("INSERT INTO "
                     + TableName
-                    + " (id, title, location, major, image, description1, description2, description3, latitude, longitude)"
+                    + " (id, title, location, major, image, description, latitude, longitude)"
                     + " VALUES (4,'Graduate Advising Office', 'Oakes Academic Building, Room 221', 'Graduate Division', " +
-                    "'emptyImage', 'Graduate description1', 'Graduate description2', 'Graduate description3', '36.9896204', '-122.0649923');");
+                    "'defaultimage', 'Graduate description1', '36.9896204', '-122.0649923');");
             myDB.execSQL("INSERT INTO "
                     + TableName
-                    + " (id, title, location, major, image, description1, description2, description3, latitude, longitude)"
-                    + " VALUES (5,'Graduate Student Housing', '', 'Graduate Division', " +
-                    "'graduatehousing.jpg', 'Graduate Housing description1', 'Graduate Housing description2', 'Graduate Housing description3', '37.0000333', '-122.0642744');");
+                    + " (id, title, location, major, image, description, latitude, longitude)"
+                    + " VALUES (5,'Graduate Student Housing', 'Redwood Grove', 'Graduate Division', " +
+                    "'graduatehousing'," +
+                    "'Graduate Student Housing is an intimate community housing just 82 students, and is home to a diverse group, including students from all over the United States and the world. " +
+                    "\n\nThe apartments are set in a beautifully landscaped natural environment conveniently located adjacent to Science Hill, home to many of UCSCs main academic facilities. " +
+                    "\n\nEach apartment has four single bedrooms, living room, kitchen, dining room, and bathroom. " +
+                    "\n\nGround floor apartments have decks, while upper apartments have private balconies. '," +
+                    " '37.0000333', '-122.0642744');");
+
+            myDB.execSQL("INSERT INTO "
+                    + TableName
+                    + " (id, title, location, major, image, description, latitude, longitude)"
+                    + " VALUES (6,'BE 301A: Computer Networks Lab', 'Baskin Engineering 1 Room 301A', 'Computer Engineering', " +
+                    "'be301', 'BE301A – Computer Networks Lab: This lab is used by the University’s Computer Networking and Electrical Engineering courses. " +
+                    "Students in these courses receive hands-on experience with real-world networking equipment and concepts to prepare them for careers as network engineers. " +
+                    "\n\nThey use software such as Wireshark to observe packets as they travel through a computer network to understand how communication between routers, switches, and computers occur on Local Area Networks as well as the Internet. " +
+                    "\n\nAdditionally, the students are introduced to emerging concepts, such as Software Defined Networking, to prepare them for the Internet of the future.'," +
+                    " '37.000271', '-122.063057');");
+
+            myDB.execSQL("INSERT INTO "
+                    + TableName
+                    + " (id, title, location, major, image, description, latitude, longitude)"
+                    + " VALUES (7,'E2 507: Computational Genomics Lab', 'Baskin Engineering 2 Room 507', 'Bioengineering', " +
+                    "'computationalgenomics', 'Computational Genomics Default Description', '37.000919', '-122.063080');");
+
             System.out.println("Done inserting");
         } catch(Exception e) {
             System.out.println(e.getLocalizedMessage());
@@ -239,15 +314,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private float getMarkerColor(String major) {
         switch(major) {
             case "Computer Science":
-                return BitmapDescriptorFactory.HUE_RED;
+                System.out.println("HUE_BLUE: " + BitmapDescriptorFactory.HUE_BLUE);
+                return BitmapDescriptorFactory.HUE_BLUE;
             case "Computer Engineering":
-                return BitmapDescriptorFactory.HUE_AZURE;
+                System.out.println("HUE_AZURE: " + BitmapDescriptorFactory.HUE_AZURE);
+                return HUE_AZURE;
             case "Electrical Engineering":
                 return BitmapDescriptorFactory.HUE_GREEN;
             case "Computer Science Game Design":
                 return BitmapDescriptorFactory.HUE_MAGENTA;
             case "Graduate Division":
                 return BitmapDescriptorFactory.HUE_YELLOW;
+            case "Bioengineering":
+                return BitmapDescriptorFactory.HUE_CYAN;
             default:
                 return BitmapDescriptorFactory.HUE_RED;
         }
@@ -271,9 +350,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             int locationIndex = c.getColumnIndex("location");
             int majorindex = c.getColumnIndex("major");
             int imageIndex = c.getColumnIndex("image");
-            int description1Index = c.getColumnIndex("description1");
-            int description2Index = c.getColumnIndex("description2");
-            int description3Index = c.getColumnIndex("description3");
+            int descriptionIndex = c.getColumnIndex("description");
             int latitudeIndex = c.getColumnIndex("latitude");
             int longitudeIndex = c.getColumnIndex("longitude");
 
@@ -282,11 +359,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             roomInformation[2] = c.getString(locationIndex);
             roomInformation[3] = c.getString(majorindex);
             roomInformation[4] = c.getString(imageIndex);
-            roomInformation[5] = c.getString(description1Index);
-            roomInformation[6] = c.getString(description2Index);
-            roomInformation[7] = c.getString(description3Index);
-            roomInformation[8] = c.getString(latitudeIndex);
-            roomInformation[9] = c.getString(longitudeIndex);
+            roomInformation[5] = c.getString(descriptionIndex);
+            roomInformation[6] = c.getString(latitudeIndex);
+            roomInformation[7] = c.getString(longitudeIndex);
 
         } else {
             System.out.println("There was an error with the cursor");
@@ -297,8 +372,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void setupBottomSheet() {
         bs = (BottomSheetLayout) findViewById(R.id.bottomsheet);
         bs.setShouldDimContentView(false);
-        bs.setPeekSheetTranslation(300);
-    }
 
+        //We are taking 80, which is the height of peekLayout in dp.
+        //Convert dp into pixels and use that as the sheet translation
+        Resources r = getResources();
+        float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, r.getDisplayMetrics());
+        bs.setPeekSheetTranslation(px);
+    }
 
 }

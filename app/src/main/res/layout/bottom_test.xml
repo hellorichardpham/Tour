@@ -5,16 +5,22 @@
     android:id="@+id/bottomsheet"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/bottomtest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:paddingBottom="16dp"
-        android:id="@+id/bottomtest"
+        android:id="@+id/bottomtest2"
         android:background="@android:color/white">
 
         <RelativeLayout
+            android:id="@+id/peekLayout"
             android:layout_width="match_parent"
             android:layout_height="@dimen/bottom_sheet_peek_height"
             android:background="@color/colorPrimary"
@@ -77,106 +83,65 @@
 
         </LinearLayout>
 
-
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border_bottom">
+            android:layout_height="match_parent"
+            android:background="@drawable/border_bottom"
+            android:paddingBottom="0dp">
 
 
-            <LinearLayout
+            <com.ms.square.android.expandabletextview.ExpandableTextView
+                xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/expand_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp">
+                expandableTextView:animAlphaStart="1"
+                expandableTextView:maxCollapsedLines="8">
 
-                <FrameLayout
+                <TextView
+                    android:id="@id/expandable_text"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp">
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
 
-                    <Button
-                        android:id="@+id/textViewDescription1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="The main lab used for Computer Science classes."
-                        android:layout_gravity="center_vertical"
-                        android:background="?attr/selectableItemBackgroundBorderless"
-                        android:textAllCaps="false"
-                        android:textColor="@android:color/black"/>
-                </FrameLayout>
+                <ImageButton
+                    android:id="@id/expand_collapse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:background="@android:color/transparent"
+                    android:padding="16dp" />
+            </com.ms.square.android.expandabletextview.ExpandableTextView>
 
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp">
 
-                    <Button
-                        android:id="@+id/textViewDescription2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Uses Linux computers with faster processors."
-                        android:layout_gravity="center_vertical"
-                        android:background="?attr/selectableItemBackgroundBorderless"
-                        android:textAllCaps="false"
-                        android:textColor="@android:color/black"/>
-                </FrameLayout>
 
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp">
-
-                    <Button
-                        android:id="@+id/textViewDescription3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="One of the only 24 hour labs on campus."
-                        android:layout_gravity="center_vertical"
-                        android:background="?attr/selectableItemBackgroundBorderless"
-                        android:textAllCaps="false"
-                        android:textColor="@android:color/black"/>
-                </FrameLayout>
-
-            </LinearLayout>
 
         </RelativeLayout>
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="APACHE LICENSE"
-                android:layout_gravity="center_vertical"
-                android:textSize="18sp"
-                android:textColor="@android:color/darker_gray"/>
-        </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="620dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="40dp">
+                    android:layout_weight="0.5"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Your remaining content here"
+                        android:textColor="@android:color/white" />
 
-            android:text="@string/dummy_text"
-            android:textSize="12sp"
-            android:textColor="@android:color/black"/>
+                </FrameLayout>
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="620dp"
-            android:background="@color/colorAccent"
-            android:layout_marginTop="40dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Your remaining content here"
-                android:textColor="@android:color/white" />
 
-        </FrameLayout>
     </LinearLayout>
+    </ScrollView>
 </com.flipboard.bottomsheet.BottomSheetLayout>
