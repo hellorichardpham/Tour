@@ -71,6 +71,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private ArrayList<String> majorsToDisplay = new ArrayList<>();
     private FloatingActionsMenu rightLabels;
     private ArrayList<Marker> listOfMarkers = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -280,7 +281,27 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
                     + " VALUES (7,'E2 507: Computational Genomics Lab', 'Baskin Engineering 2 Room 507', 'Bioengineering', " +
-                    "'computationalgenomics', 'Computational Genomics Default Description', '37.000919', '-122.063080');");
+                    "'defaultimage', 'Computational Genomics Default Description', '37.000919', '-122.063080');");
+
+            myDB.execSQL("INSERT INTO "
+                    + TableName
+                    + " (id, title, location, major, image, description, latitude, longitude)"
+                    + " VALUES (8,'BE 268: Applied Optics Lab', 'Baskin Engineering 1 Room 268', 'Electrical Engineering', " +
+                    "'defaultimage', 'The Applied Optics group investigates a number of topics at the interface of optics, electronics, nanotechnology, and applied physics." +
+                    "\n\nWe are developing optofluidic devices for detection and analysis of biomarkers on a chip. The technology has broad applications such as infecious disease diagnosis, cancer companion therapy, or the search for biomolecules in space." +
+                    "\n\nWe are also studying the magnetic behavior of nanomagnets using ultrashort laser pulses. Nanopatterned magnets have applications ranging from next generation hard drives to computer memory to microwave oscillators." +
+                    "\n\nOur work uses a broad range of experimental techniques ranging from micro-and nanofabrication to single molecule optical spectroscopy.'," +
+                    " '37.000058', '-122.063369');");
+
+            myDB.execSQL("INSERT INTO "
+                    + TableName
+                    + " (id, title, location, major, image, description, latitude, longitude)"
+                    + " VALUES (9,'BE XXX: DANSER Lab', 'Baskin Engineering 1 Room XXX', 'Electrical Engineering', " +
+                    "'danser', 'DANSER is the Dynamics, Autonomous Navigation, Surface Engineering and Robotics Lab at University of California Santa Cruz." +
+                    "\n\nOur lab builds structurally compliant robots for applications including exosuits, exoskeletons, manipulators, prosthetics, and rovers. " +
+                    "\n\nTensegrity is a design principle that features compression elements suspended within a network of tension elements. This fusion results in a hybrid soft-rigid structure that easily complies with external stresses by distributing loads throughout the entire tension network." +
+                    "\n\nThis paradigm is particularly useful for developing robots that mimic musculoskeletal kinematics and dynamics. We have chosen to apply these ideas to our own biomechanically-oriented projects.'," +
+                    " '37.000095', '-122.063183');");
 
             System.out.println("Done inserting");
         } catch(Exception e) {
