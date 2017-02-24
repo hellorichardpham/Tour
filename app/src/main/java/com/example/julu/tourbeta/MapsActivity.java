@@ -64,7 +64,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private SQLiteDatabase myDB = null;
     private String TableName = "testdb4";
     private ExpandableTextView expandableText;
-    private String[] majorArray = {"Computer Science", "CS: Game Design",
+    private String[] majorArray = {"Graduate Division", "Computer Science", "CS: Game Design",
             "Computer Engineering", "Electrical Engineering",
             "Technology Information Management", "Bioengineering"};
 
