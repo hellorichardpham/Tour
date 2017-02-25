@@ -21,6 +21,7 @@ android {
 
 repositories {
     jcenter()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -36,5 +37,8 @@ dependencies {
     compile 'com.flipboard:bottomsheet-commons:1.5.3' // optional
     compile 'com.ms-square:expandableTextView:0.1.4'
     compile 'com.getbase:floatingactionbutton:1.10.1'
+    compile 'com.heinrichreimersoftware:material-intro:1.6'
+    compile 'com.github.Shyish:CheckView:1.0.4'
+
 
 }
