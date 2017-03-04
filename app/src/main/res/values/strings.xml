@@ -72,7 +72,7 @@
         <string name="label_fake_login_loading">Loading…</string>
         <string name="label_fake_login_success">Logged in ☺</string>
         <string name="label_fake_login_success_message">Successfully faked login.</string>
-        <string name="label_fill_out_form">Please fill out the form before proceeding.</string>
+        <string name="label_fill_out_form">Please choose at least one major you are interested in</string>
 
         <string name="title_fragment_custom">Take off!</string>
 

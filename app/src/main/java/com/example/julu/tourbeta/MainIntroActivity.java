@@ -1,12 +1,9 @@
 package com.example.julu.tourbeta;
 
-import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
-import android.view.Gravity;
 import android.view.View;
-import android.widget.Toast;
 
 import com.heinrichreimersoftware.materialintro.app.IntroActivity;
 import com.heinrichreimersoftware.materialintro.app.OnNavigationBlockedListener;
@@ -32,23 +29,22 @@ public class MainIntroActivity extends IntroActivity {
 
         boolean fullscreen = intent.getBooleanExtra(EXTRA_FULLSCREEN, false);
         boolean scrollable = intent.getBooleanExtra(EXTRA_SCROLLABLE, false);
-        boolean customFragments = intent.getBooleanExtra(EXTRA_CUSTOM_FRAGMENTS, true);
-        boolean permissions = intent.getBooleanExtra(EXTRA_PERMISSIONS, true);
+
         boolean showBack = intent.getBooleanExtra(EXTRA_SHOW_BACK, true);
         boolean showNext = intent.getBooleanExtra(EXTRA_SHOW_NEXT, true);
         boolean skipEnabled = intent.getBooleanExtra(EXTRA_SKIP_ENABLED, true);
         boolean finishEnabled = intent.getBooleanExtra(EXTRA_FINISH_ENABLED, true);
-        boolean getStartedEnabled = intent.getBooleanExtra(EXTRA_GET_STARTED_ENABLED, true);
 
         setFullscreen(fullscreen);
 
         super.onCreate(savedInstanceState);
 
         setButtonBackFunction(skipEnabled ? BUTTON_BACK_FUNCTION_SKIP : BUTTON_BACK_FUNCTION_BACK);
-        setButtonNextFunction(finishEnabled ? BUTTON_NEXT_FUNCTION_NEXT_FINISH : BUTTON_NEXT_FUNCTION_NEXT);
+        setButtonNextFunction(BUTTON_NEXT_FUNCTION_NEXT_FINISH);
+        //setButtonNextFunction(finishEnabled ? BUTTON_NEXT_FUNCTION_NEXT_FINISH : BUTTON_NEXT_FUNCTION_NEXT);
         setButtonBackVisible(showBack);
         setButtonNextVisible(showNext);
-        //setButtonCtaVisible(getStartedEnabled);
+
         setButtonCtaTintMode(BUTTON_CTA_TINT_MODE_TEXT);
 
         addSlide(new SimpleSlide.Builder()
@@ -69,80 +65,30 @@ public class MainIntroActivity extends IntroActivity {
                 .scrollable(scrollable)
                 .build());
 
-        /*
-        addSlide(new SimpleSlide.Builder()
-                .title(R.string.title_material_motion)
-                .description(R.string.description_material_motion)
-                .image(R.drawable.art_material_motion)
-                .background(R.color.color_material_motion)
-                .backgroundDark(R.color.color_dark_material_motion)
-                .scrollable(scrollable)
-                .build());
+        final Slide checkboxSlide;
 
-        addSlide(new SimpleSlide.Builder()
-                .title(R.string.title_material_shadow)
-                .description(R.string.description_material_shadow)
-                .image(R.drawable.art_material_shadow)
-                .background(R.color.color_material_shadow)
-                .backgroundDark(R.color.color_dark_material_shadow)
-                .scrollable(scrollable)
-                .build());
+        checkboxSlide = new FragmentSlide.Builder()
+                .background(R.color.test1)
+                .backgroundDark(R.color.test2)
+                .fragment(MajorFragment.newInstance())
+                .build();
+        addSlide(checkboxSlide);
 
-        */
 
-        final Slide loginSlide;
-        if (customFragments) {
-            loginSlide = new FragmentSlide.Builder()
-                    .background(R.color.color_custom_fragment_1)
-                    .backgroundDark(R.color.color_dark_custom_fragment_1)
-                    .fragment(com.example.julu.tourbeta.LoginFragment.newInstance())
-                    .build();
-            addSlide(loginSlide);
-
-            addSlide(new FragmentSlide.Builder()
-                    .background(R.color.color_custom_fragment_2)
-                    .backgroundDark(R.color.color_dark_custom_fragment_2)
-                    .fragment(R.layout.fragment_custom, R.style.AppThemeDark)
-                    .build());
-        } else {
-            loginSlide = null;
-        }
-
-        //Feel free to add a navigation policy to define when users can go forward/backward
-        /*
-        setNavigationPolicy(new NavigationPolicy() {
+        addOnNavigationBlockedListener(new OnNavigationBlockedListener() {
             @Override
-            public boolean canGoForward(int position) {
-                return true;
-            }
+            public void onNavigationBlocked(int position, int direction) {
+                View contentView = findViewById(android.R.id.content);
+                if (contentView != null) {
+                    Slide slide = getSlide(position);
 
-            @Override
-            public boolean canGoBackward(int position) {
-                return true;
+                    if (slide == checkboxSlide) {
+                        Snackbar.make(contentView, R.string.label_fill_out_form, Snackbar.LENGTH_LONG).show();
+                    }
+                }
             }
         });
-        */
 
-
-        //Feel free to add and remove page change listeners
-        /*
-        addOnPageChangeListener(new ViewPager.OnPageChangeListener(){
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
-            }
-        });
-        */
     }
 
 }
