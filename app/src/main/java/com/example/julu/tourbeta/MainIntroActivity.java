@@ -27,8 +27,8 @@ public class MainIntroActivity extends IntroActivity {
     protected void onCreate(Bundle savedInstanceState) {
         Intent intent = getIntent();
 
-        boolean fullscreen = intent.getBooleanExtra(EXTRA_FULLSCREEN, false);
-        boolean scrollable = intent.getBooleanExtra(EXTRA_SCROLLABLE, false);
+        boolean fullscreen = true;//intent.getBooleanExtra(EXTRA_FULLSCREEN, false);
+        boolean scrollable = false;//intent.getBooleanExtra(EXTRA_SCROLLABLE, false);
 
         boolean showBack = intent.getBooleanExtra(EXTRA_SHOW_BACK, true);
         boolean showNext = intent.getBooleanExtra(EXTRA_SHOW_NEXT, true);
@@ -47,29 +47,21 @@ public class MainIntroActivity extends IntroActivity {
 
         setButtonCtaTintMode(BUTTON_CTA_TINT_MODE_TEXT);
 
-        addSlide(new SimpleSlide.Builder()
-                .title("Baskin School of Engineering Virtual Tour")
-                .description(R.string.description_material_metaphor)
-                .image(R.drawable.cyberslug)
-                .background(R.color.blue_semi_transparent)
-                .backgroundDark(R.color.color_dark_material_metaphor)
-                .scrollable(scrollable)
-                .build());
 
-        addSlide(new SimpleSlide.Builder()
-                .title(R.string.title_material_bold)
-                .description(R.string.description_material_bold)
-                .image(R.drawable.art_material_bold)
-                .background(R.color.color_material_bold)
-                .backgroundDark(R.color.color_dark_material_bold)
-                .scrollable(scrollable)
-                .build());
+        final Slide testSlide;
+
+        testSlide = new FragmentSlide.Builder()
+                .background(R.color.blue_semi_transparent)
+                .backgroundDark(R.color.color_canteen)
+                .fragment(GenericFragment.newInstance())
+                .build();
+        addSlide(testSlide);
 
         final Slide checkboxSlide;
 
         checkboxSlide = new FragmentSlide.Builder()
-                .background(R.color.test1)
-                .backgroundDark(R.color.test2)
+                .background(R.color.blue_semi_transparent)
+                .backgroundDark(R.color.color_canteen)
                 .fragment(MajorFragment.newInstance())
                 .build();
         addSlide(checkboxSlide);

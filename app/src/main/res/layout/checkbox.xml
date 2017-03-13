@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/graduateButton"
+        android:layout_width="196dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/cpb_white"
+        android:textSize="18sp"
+        app:cpb_textComplete="Added Graduate Division"
+        app:cpb_textError="@string/Error"
+        app:cpb_textIdle="Graduate Division"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/computerscienceButton"
+        android:layout_width="196dp"
+        android:layout_height="64dp"
+        android:textColor="@color/cpb_white"
+        android:textSize="18sp"
+        app:cpb_textComplete="Added Computer Science"
+        app:cpb_textError="@string/Error"
+        app:cpb_textIdle="Computer Science"
+        android:layout_below="@+id/graduateButton"
+        android:layout_alignStart="@+id/graduateButton"
+        android:layout_marginTop="5dp" />
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/gamedesignButton"
+        android:layout_width="196dp"
+        android:layout_height="64dp"
+        android:textColor="@color/cpb_white"
+        android:textSize="18sp"
+        app:cpb_textComplete="Added CS: Game Design"
+        app:cpb_textError="@string/Error"
+        app:cpb_textIdle="CS: Game Design"
+        android:layout_below="@+id/computerscienceButton"
+        android:layout_alignStart="@+id/computerscienceButton"
+        android:layout_marginTop="5dp" />
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/computerengineeringButton"
+        android:layout_width="196dp"
+        android:layout_height="64dp"
+        android:textColor="@color/cpb_white"
+        android:textSize="18sp"
+        app:cpb_textComplete="Added Computer Engineering"
+        app:cpb_textError="@string/Error"
+        app:cpb_textIdle="Computer Engineering"
+        android:layout_below="@+id/gamedesignButton"
+        android:layout_alignStart="@+id/gamedesignButton"
+        android:layout_marginTop="5dp" />
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/electricalengineeringButton"
+        android:layout_width="196dp"
+        android:layout_height="64dp"
+        android:textColor="@color/cpb_white"
+        android:textSize="18sp"
+        app:cpb_textComplete="Added Electrical Engineering"
+        app:cpb_textError="@string/Error"
+        app:cpb_textIdle="Electrical Engineering"
+        android:layout_below="@+id/computerengineeringButton"
+        android:layout_alignStart="@+id/computerengineeringButton"
+        android:layout_marginTop="5dp" />
+
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/timButton"
+        android:layout_width="196dp"
+        android:layout_height="64dp"
+        android:textColor="@color/cpb_white"
+        android:textSize="18sp"
+        app:cpb_textComplete="Added Technology Information Management"
+        app:cpb_textError="@string/Error"
+        app:cpb_textIdle="Technology Information Management"
+        android:layout_below="@+id/electricalengineeringButton"
+        android:layout_alignStart="@+id/electricalengineeringButton"
+        android:layout_marginTop="5dp" />
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/bioengineeringButton"
+        android:layout_width="196dp"
+        android:layout_height="64dp"
+        android:textColor="@color/cpb_white"
+        android:textSize="18sp"
+        app:cpb_textComplete="Added Bioengineering"
+        app:cpb_textError="@string/Error"
+        app:cpb_textIdle="Bioengineering"
+        android:layout_below="@+id/timButton"
+        android:layout_alignStart="@+id/timButton"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>

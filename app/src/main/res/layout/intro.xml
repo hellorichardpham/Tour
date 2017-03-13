@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cyberslug"
+        android:id="@+id/imageView2"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="Jack Baskin School of Engineering Virtual Tour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:scrollbars="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:gravity="center" />
+
+    <TextView
+        android:text="Welcome to the Jack Baskin School of Engineering at UC Santa Cruz. We will show you a wide variety of research labs, club activities, and instruction labs that you may soon become a part of based on what majors you are interested in. Please select the major(s) that you are interested in studying, and we'll show you the points of interest related to that major. You can select other majors to see what other fields of study have to offer as well."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp" />
+
+</LinearLayout>

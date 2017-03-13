@@ -20,8 +20,8 @@
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
         android:layout_marginLeft="32dp"
-        android:background="@color/color_canteen"
-        app:cvlineColor="@color/test2"
+        android:background="@color/test2"
+        app:cvlineColor="@color/color_canteen"
         />
     <com.zdvdev.checkview.CheckView
         android:id="@+id/computerScienceGameDesign"

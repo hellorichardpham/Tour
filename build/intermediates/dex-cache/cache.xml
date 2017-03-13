@@ -133,7 +133,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="db5e53d99e6821a90d3e3c6344f1fee66659770b">
+        sha1="511405bde66b63d4442f8e766d3f3c52200edd39">
         <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_50c0e85e6979faa494dc44b66db1ee9f90f4b707/classes.dex" />
     </item>
     <item
@@ -162,6 +162,15 @@
         revision="25.0.2"
         sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
         <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_e1cda490cc491c968fd819a6935d461882985822/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/exploded-aar/com.github.dmytrodanylyk.circular-progress-button/library/1.1.3/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8a6ed980c74ad35b2dfc4e1daf97bfc0eea5d7c9">
+        <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.dmytrodanylyk.circular-progress-button-library-1.1.3_9c709f0c90e9099014d14f64e51b8a04451ce544/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -538,7 +547,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="29f85dc4dcca252f5c61c0defe08f312c9b4bbc2">
+        sha1="f584c7223d91a62d001ab79c104a3451afb44eb2">
         <dex dex="/Users/dylantieu/Desktop/TourBeta/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f5b5cfc401ec8e6f7c8030826a5b0d3212991a0d/classes.dex" />
     </item>
     <item
