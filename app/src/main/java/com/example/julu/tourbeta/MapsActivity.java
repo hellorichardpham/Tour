@@ -232,7 +232,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
                     + " VALUES (0,'Computer Lab', 'Baskin Engineering 1 Room 105', 'Computer Science', " +
-                    "'be105', 'A material metaphor is the unifying theory of a rationalized space and a system of motion. The material is grounded in tactile reality, inspired by the study of paper and ink, yet technologically advanced and open to imagination and magic.', 37.0002225, -122.063148);");
+                    "'be105', 'BE105 and BE109 are one of the few 24 hour computer labs on campus. Most Computer Science and Computer Engineering students will spent their time here during lab sections for their lower-division Computer Science and Computer Engineering courses. Here students learn how to access the UNIX servers hosted by the School of Engineering so they can access their work remotely. In addition, classes such as robot automation and assembly language are held here. ', 37.0002225, -122.063148);");
 
             myDB.execSQL("INSERT INTO "
                     + TableName
@@ -247,7 +247,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
                     + " VALUES (2,'Mechatronics Lab', 'Baskin Engineering 1 Room 115', 'Computer Engineering', " +
-                    "'defaultimage', '115 description1', '37.000189', '-122.063545');");
+                    "'defaultimage', 'BE115 is home to CMPEE118: Introduction to Mechatronics. In this class teams of 3-4 students must build a fully autonomous robot from the ground up in 5 weeks--meaning that once the power switch is on, the robot must function on its own." +
+                    "\n\nThe first five weeks students learn about components that are needed to build the robot such as amplifiers, infrared sensors, bump sensors, and so on. The rest of the quarter they focus on building a complete robot.\n\nAt the end of the quarter there’s a competition. Previous examples include a competition based on Enders Game, where the robot had to navigate around “stars” and find the enemys home beacon. Also, robots scored points every time it was hit by an enemys ping-pong ball.', '37.000189', '-122.063545');");
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
@@ -290,7 +291,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
                     + " VALUES (7,'Computational Genomics Lab', 'Baskin Engineering 2 Room 507', 'Bioengineering', " +
-                    "'defaultimage', 'Computational Genomics Default Description', '37.000919', '-122.063080');");
+                    "'defaultimage', 'Our research is currently focused on:\n\nBuilding technology to connect the institutional silos where genome information is now isolated by forging and implementing interoperable standards. We are a proud members of the Global Alliance for Genomics and Health.\n\nComparing the history of vertebrate genomes." +
+                    "\n\nWant to reconstruct a 65 million old genome from the genomes of its descendants? Talk to us! We love the Genome 10K, a project to sequence 10,000 vertebrate genomes.\n\nUsing next-next generation sequencing technology to create more complete, accurate and phased genomes." +
+                    "\n\nMaking it easy to discover and share portable, reproducible and scalable genomic workflows." +
+                    "\n\nAnalyzing massive genomic datasets using the cloud." +
+                    "\n\nBuild a human reference genome structure that contains all common variation as a universal basis for genomics." +
+                    "\n\nCompleting the library of human and mouse RNAs.', '37.000919', '-122.063080');");
 
             myDB.execSQL("INSERT INTO "
                     + TableName
@@ -322,6 +328,25 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     "\n\nAt UC Santa Cruz, MEP is an integral part of the Undergraduate Advising Unit–providing advice in academic, career, social and cultural areas for students in the SoE community." + " MEP provides a variety of academic and personal support services to encourage the academic success and graduation of aspiring engineering students who are first in their family to attend college or first to enroll in computer science or engineering studies, or from family backgrounds of limited financial resources and less educational opportunities. The MEP learning community augments students’ undergraduate experience by engaging their full participation in services and activities which ensure that students gain access and achieve success, and by leveraging a strong support network that encourages their matriculation into graduate school.'," +
                     " '37.000258', '-122.062930');");
 
+            myDB.execSQL("INSERT INTO "
+                    + TableName
+                    + " (id, title, location, major, image, description, latitude, longitude)"
+                    + " VALUES (11,'Nanopore Lab', 'Baskin Engineering 1 Room XXX', 'Bioengineering', " +
+                    "'defaultimage', 'The nanopore project at UC Santa Cruz has pioneered the use of ion channels for the analysis of single RNA and DNA molecules. Nanopore technology makes it possible to measure DNA structure and dynamics with precision at the angstrom level. Thus, it is possible to rapidly discriminate between nearly identical strands of DNA and investigate their physical properties. Nanopore technology is well suited to analysis of the terminal ends of double-stranded DNA, and it is amenable to high throughput experiments." +
+                    "\n\nIn the future, it may be possible to develop a durable solid-state or protein-based nanopore device that would allow the measurement of several different genomic factors from one cell without amplification:" +
+                    "\n\nGene expression" +
+                    "\n\nSingle-nucleotide polymorphisms (SNPs), common, minute variations in genes that can be used to track familial inheritance\n\nPoint mutations in single RNA or DNA molecules" +
+                    "\n\nUsing machine learning tools developed at UCSC, each molecule could be identified in real time and in less than 50 milliseconds. Such a device would have broad clinical utility in diagnosing inherited traits such as hearing disorders and drug sensitivity and in tracking disease progression at the level of single cells.', '37.000309', '-122.063426');");
+
+            myDB.execSQL("INSERT INTO "
+                    + TableName
+                    + " (id, title, location, major, image, description, latitude, longitude)"
+                    + " VALUES (12,'Human Genome Sequencing Lab', 'Baskin Engineering 1 Room XXX', 'Bioengineering', " +
+                    "'defaultimage', 'On June 22, 2000, UCSC and the other members of the International Human Genome Project consortium completed the first working draft of the human genome assembly, forever ensuring free public access to the genome and the information it contains. A few weeks later, on July 7, 2000, the newly assembled genome was released on the web at http://genome.ucsc.edu, along with the initial prototype of a graphical viewing tool, the UCSC Genome Browser." +
+                    "\n\nUC Santa Cruz possesses particular strength in bioinformatics--the myriad ways to probe and analyze biological data by using computational, mathematical, and statistical approaches.\n\nThe largest product of this expertise is the UCSC Genome Browser, which serves as an interactive web-based microscope that allows researchers to view all 23 chromosomes of the human genome at any scale, from a full chromosome down to an individual nucleotide. The genome sequences on display have been analyzed and annotated, and they are aligned with the genomes of dozens of other species that are also displayed on the UCSC browser. Biomedical researchers throughout the world use this browser extensively as they seek to understand the vast amount of information contained in the genome sequences, to probe them with new experimental and informatics methodologies, and ultimately to decode the genetic program of life.\n\nFar from simply displaying the genetic code, the UCSC browser brings the code to life by aligning relevant areas with experimental and computational data and images. It also links to international databases, giving researchers instant access to deeper information about the genome. An experienced user can form a hypothesis and verify it in minutes using this tool.\n\nThe browser platform has multiple potential uses that can improve diagnosis, prevention, and cures for disease. Spin-offs include the following:" +
+                    "\n\nThe HIV Data Browser" +
+                    "\n\nThe UCSC Cancer Genomics Browser" +
+                    "\n\nThe data collection center for the international ENCODE project', '37.000372', '-122.063437');");
 
             System.out.println("Done inserting");
         } catch(Exception e) {

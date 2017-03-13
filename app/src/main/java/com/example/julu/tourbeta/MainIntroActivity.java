@@ -75,7 +75,7 @@ public class MainIntroActivity extends IntroActivity {
                     Slide slide = getSlide(position);
 
                     if (slide == checkboxSlide) {
-                        Snackbar.make(contentView, R.string.label_fill_out_form, Snackbar.LENGTH_LONG).show();
+                        Snackbar.make(contentView, R.string.label_fill_out_form, Snackbar.LENGTH_SHORT).show();
                     }
                 }
             }
