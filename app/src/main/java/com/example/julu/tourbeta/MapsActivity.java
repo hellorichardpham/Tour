@@ -222,7 +222,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void setupDatabase() {
         try {
             myDB = this.openOrCreateDatabase("DatabaseName", MODE_PRIVATE, null);
-            myDB.execSQL("DROP TABLE " + TableName);
+            //myDB.execSQL("DROP TABLE " + TableName);
             myDB.execSQL("CREATE TABLE IF NOT EXISTS "
                     + TableName
                     + " (id INT(2), title VARCHAR(30), location VARCHAR(50), major VARCHAR(30), " +
@@ -321,7 +321,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
-                    + " VALUES (10,'Multicultural Engineering Program', 'Baskin Engineering 1 Room 399', 'Organizations', " +
+                    + " VALUES (10,'MESA Engineering Program', 'Baskin Engineering 1 Room 399', 'Organizations', " +
                     "'mep', 'The MESA Engineering Program, also known as the Multicultural Engineering Program at the University of California Santa Cruz campus, is the university level component of the statewide Mathematics, Engineering, Science Achievement (MESA) - a program of the University of California Office of the President." +
                     "\n\nAt UC Santa Cruz, MEP is supported by the Baskin School of Engineering with its goal to promote diversity and facilitate the retention and graduation of a diverse population of students, especially groups which continue to remain the most underrepresented in engineering studies. The program received the 2004 UC Santa Cruz Excellence Through Diversity Award which is presented to programs or individuals for efforts which promote a diverse and inclusive environment." +
                     "\n\nThe School of Engineering (SoE) strives to maintain an environment that stimulates excellence in scholarship and service along with a commitment to diversity through the coordinated efforts and services of the Multicultural Engineering Program (MEP). Also known as the MESA Engineering Program, MEP is the university level component of the statewide system Mathematics, Engineering, Science Achievement (MESA) program of the University of California Office of the President." +
@@ -331,8 +331,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
-                    + " VALUES (11,'Nanopore Lab', 'Baskin Engineering 1 Room XXX', 'Bioengineering', " +
-                    "'defaultimage', 'The nanopore project at UC Santa Cruz has pioneered the use of ion channels for the analysis of single RNA and DNA molecules. Nanopore technology makes it possible to measure DNA structure and dynamics with precision at the angstrom level. Thus, it is possible to rapidly discriminate between nearly identical strands of DNA and investigate their physical properties. Nanopore technology is well suited to analysis of the terminal ends of double-stranded DNA, and it is amenable to high throughput experiments." +
+                    + " VALUES (11,'Nanopore Lab', 'Baskin Engineering 1 Room 217', 'Bioengineering', " +
+                    "'nanopore', 'The Nanopore project at UC Santa Cruz has pioneered the use of ion channels for the analysis of single RNA and DNA molecules. Nanopore technology makes it possible to measure DNA structure and dynamics with precision at the angstrom level. Thus, it is possible to rapidly discriminate between nearly identical strands of DNA and investigate their physical properties. Nanopore technology is well suited to analysis of the terminal ends of double-stranded DNA, and it is amenable to high throughput experiments." +
                     "\n\nIn the future, it may be possible to develop a durable solid-state or protein-based nanopore device that would allow the measurement of several different genomic factors from one cell without amplification:" +
                     "\n\nGene expression" +
                     "\n\nSingle-nucleotide polymorphisms (SNPs), common, minute variations in genes that can be used to track familial inheritance\n\nPoint mutations in single RNA or DNA molecules" +
@@ -341,12 +341,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
-                    + " VALUES (12,'Human Genome Sequencing Lab', 'Baskin Engineering 1 Room XXX', 'Bioengineering', " +
+                    + " VALUES (12,'Human Genome Sequencing Lab', 'Baskin Engineering 1 Room 210', 'Bioengineering', " +
                     "'defaultimage', 'On June 22, 2000, UCSC and the other members of the International Human Genome Project consortium completed the first working draft of the human genome assembly, forever ensuring free public access to the genome and the information it contains. A few weeks later, on July 7, 2000, the newly assembled genome was released on the web at http://genome.ucsc.edu, along with the initial prototype of a graphical viewing tool, the UCSC Genome Browser." +
                     "\n\nUC Santa Cruz possesses particular strength in bioinformatics--the myriad ways to probe and analyze biological data by using computational, mathematical, and statistical approaches.\n\nThe largest product of this expertise is the UCSC Genome Browser, which serves as an interactive web-based microscope that allows researchers to view all 23 chromosomes of the human genome at any scale, from a full chromosome down to an individual nucleotide. The genome sequences on display have been analyzed and annotated, and they are aligned with the genomes of dozens of other species that are also displayed on the UCSC browser. Biomedical researchers throughout the world use this browser extensively as they seek to understand the vast amount of information contained in the genome sequences, to probe them with new experimental and informatics methodologies, and ultimately to decode the genetic program of life.\n\nFar from simply displaying the genetic code, the UCSC browser brings the code to life by aligning relevant areas with experimental and computational data and images. It also links to international databases, giving researchers instant access to deeper information about the genome. An experienced user can form a hypothesis and verify it in minutes using this tool.\n\nThe browser platform has multiple potential uses that can improve diagnosis, prevention, and cures for disease. Spin-offs include the following:" +
                     "\n\nThe HIV Data Browser" +
                     "\n\nThe UCSC Cancer Genomics Browser" +
                     "\n\nThe data collection center for the international ENCODE project', '37.000372', '-122.063437');");
+
+            myDB.execSQL("INSERT INTO "
+                    + TableName
+                    + " (id, title, location, major, image, description, latitude, longitude)"
+                    + " VALUES (13,'Computer Vision Lab', 'Baskin Engineering 2 Room XXX', 'Computer Science', " +
+                    "'computervision', 'We do research on different aspects of computer vision,  sensor signal processing, and human-machine interface. Most of our projects are guided by applications in assistive technology for people who are blind or have a visual impairment.\n\nThe laboratory, formed in 2001 by R. Manduchi and H. Tao, is part of the Department of Computer Engineering at UC Santa Cruz. Our research is or has been supported by grants from NSF, NIH, DARPA, NASA, Research to Prevent Blindness, Transportation Research Board, CITRIS, HP Labs, SAIC, Honda Research, Imimtek, NEC, Nokia Research, CITRIS, VW, Microsoft, Toyota. We are particularly indebted to the late Mr. Larry Bock, who generously contributed to the mission of our lab.', '37.000885', '-122.062830');");
+
 
             System.out.println("Done inserting");
         } catch(Exception e) {
@@ -524,7 +531,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             ActivityCompat.requestPermissions(this,new String[]{ACCESS_FINE_LOCATION}, 1);
 
             Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-            System.out.println("This is my location: Lat: " + location.getLatitude() + "Long: " + location.getLongitude());
+            //System.out.println("This is my location: Lat: " + location.getLatitude() + "Long: " + location.getLongitude());
             mMap.setMyLocationEnabled(true);
         } catch (SecurityException e) {
             System.out.println("Error: " + e.getLocalizedMessage());
