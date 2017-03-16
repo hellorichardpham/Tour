@@ -29,7 +29,7 @@
         android:gravity="center" />
 
     <TextView
-        android:text="Welcome to the Jack Baskin School of Engineering at UC Santa Cruz. We will show you a wide variety of research labs, club activities, and instruction labs that you may soon become a part of based on what majors you are interested in. Please select the major(s) that you are interested in studying, and we'll show you the points of interest related to that major. You can select other majors to see what other fields of study have to offer as well."
+        android:text="@string/introductionMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView3"

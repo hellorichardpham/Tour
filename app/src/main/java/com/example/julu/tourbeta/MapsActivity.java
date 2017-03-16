@@ -53,12 +53,18 @@ import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 import static android.R.attr.id;
 import static android.R.attr.tag;
 import static com.example.julu.tourbeta.R.drawable.be105;
+import static com.example.julu.tourbeta.R.drawable.be301;
+import static com.example.julu.tourbeta.R.drawable.danser;
+import static com.example.julu.tourbeta.R.drawable.graduatehousing;
+import static com.example.julu.tourbeta.R.drawable.mechatronics;
 import static com.example.julu.tourbeta.R.id.bottomsheet;
 import static com.example.julu.tourbeta.R.id.bottomtest;
 import static com.example.julu.tourbeta.R.id.list;
 import static com.example.julu.tourbeta.R.id.map;
 import static com.example.julu.tourbeta.R.id.textViewMajor;
+import static com.example.julu.tourbeta.R.string.be105Desciption;
 import static com.google.android.gms.maps.model.BitmapDescriptorFactory.HUE_AZURE;
+import static com.google.android.gms.maps.model.BitmapDescriptorFactory.HUE_ORANGE;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,
         LocationListener, GoogleMap.OnMarkerClickListener{
@@ -103,13 +109,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
     }
-    /*
-
-        private String[] majorArray = {"Computer Science", "Computer Science: GD",
-            "Computer Engineering", "Electrical Engineering",
-            "Technology Information Management", "Bioengineering"};
-     */
-
     //go through all majorArray where each index is contained within majorsToDisplay
 
     public void addAllMajors() {
@@ -221,8 +220,50 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     public void setupDatabase() {
         try {
+/*
+be105Desciption
+gameLabDescription
+mechatronicsDescription
+ee101Description
+graduateAdvisingDescription
+graduateHousingDescription
+danserDescription
+opticsLabDescription
+genomicsDescription
+be301Description
+mepDescription
+nanoporeLabDescription
+humanGenomeDescription
+computerVisionDescription
+
+String be105Desciption = getResources().getString(R.string.be105Desciption);
+            String be105Desciption = getResources().getString(R.string.be105Desciption);
+            String be105Desciption = getResources().getString(R.string.be105Desciption);
+
+            <string name="mepDescription"></string>
+    <string name="nanoporeLabDescription"></string>
+    <string name="humanGenomeDescription"></string>
+    <string name="computerVisionDescription"></string>
+ */
+            String be105Description = getResources().getString(be105Desciption);
+            String gameLabDescription = getResources().getString(R.string.gameLabDescription);
+            String mechatronicsDescription = getResources().getString(R.string.mechatronicsDescription);
+            String ee101Description = getResources().getString(R.string.ee101Description);
+            String graduateAdvisingDescription = getResources().getString(R.string.graduateAdvisingDescription);
+            String graduateHousingDescription = getResources().getString(R.string.graduateHousingDescription);
+            String danserDescription = getResources().getString(R.string.danserDescription);
+            String opticsLabDescription = getResources().getString(R.string.opticsLabDescription);
+            String computationalGenomicsDescription = getResources().getString(R.string.computationalGenomicsDescription);
+            String be301Description = getResources().getString(R.string.be301Description);
+            String mepDescription = getResources().getString(R.string.mepDescription);
+            String nanoporeLabDescription = getResources().getString(R.string.nanoporeLabDescription);
+            String humanGenomeDescription = getResources().getString(R.string.humanGenomeDescription);
+            String computerVisionDescription = getResources().getString(R.string.computerVisionDescription);
+
+
+
             myDB = this.openOrCreateDatabase("DatabaseName", MODE_PRIVATE, null);
-            //myDB.execSQL("DROP TABLE " + TableName);
+            myDB.execSQL("DROP TABLE " + TableName);
             myDB.execSQL("CREATE TABLE IF NOT EXISTS "
                     + TableName
                     + " (id INT(2), title VARCHAR(30), location VARCHAR(50), major VARCHAR(30), " +
@@ -231,92 +272,62 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
-                    + " VALUES (0,'Computer Lab', 'Baskin Engineering 1 Room 105', 'Computer Science', " +
-                    "'be105', 'BE105 and BE109 are one of the few 24 hour computer labs on campus. Most Computer Science and Computer Engineering students will spent their time here during lab sections for their lower-division Computer Science and Computer Engineering courses. Here students learn how to access the UNIX servers hosted by the School of Engineering so they can access their work remotely. In addition, classes such as robot automation and assembly language are held here. ', 37.0002225, -122.063148);");
+                    + " VALUES (0,'Linux Lab', 'Baskin Engineering 1 Room 105', 'Computer Science', " +
+                    "'be105', " + be105Description + ", 37.0002225, -122.063148);");
 
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
                     + " VALUES (1,'Game Design Lab', 'Baskin Engineering 1 Room 368', 'CS: Game Design', " +
-                    "'defaultimage'," +
-                    " 'The Game Lab is among the most distinctive teaching labs at UC Santa Cruz. Here, undergraduate game majors work in teams of 4 to 15 students to create a substantial computer game over their entire senior year. " +
-                    "\n\nGame Lab games have won awards at game festivals such as IndieCade and the Google Play Indie Games awards, and are publicly released on platforms such as Itch.io, the Apple App Store, and the Google Play Store. " +
-                    "\n\nThe lab features high end computer workstations with VR-capable graphics cards and dual monitors, virtual reality headsets, game prototyping supplies, a sound studio, an extensive library of books on game topics, and multiple team meeting spaces.'," +
-                    " '37.000419', '-122.062715');");
+                    "'defaultimage'," + gameLabDescription +
+                    ", '37.000419', '-122.062715');");
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
                     + " VALUES (2,'Mechatronics Lab', 'Baskin Engineering 1 Room 115', 'Computer Engineering', " +
-                    "'defaultimage', 'BE115 is home to CMPEE118: Introduction to Mechatronics. In this class teams of 3-4 students must build a fully autonomous robot from the ground up in 5 weeks--meaning that once the power switch is on, the robot must function on its own." +
-                    "\n\nThe first five weeks students learn about components that are needed to build the robot such as amplifiers, infrared sensors, bump sensors, and so on. The rest of the quarter they focus on building a complete robot.\n\nAt the end of the quarter there’s a competition. Previous examples include a competition based on Enders Game, where the robot had to navigate around “stars” and find the enemys home beacon. Also, robots scored points every time it was hit by an enemys ping-pong ball.', '37.000189', '-122.063545');");
+                    "'mechatronics'," + mechatronicsDescription + ", '37.000189', '-122.063545');");
+
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
                     + " VALUES (3,'Electrical Engineering 101 Lab', 'Baskin Engineering 1 Room 150', 'Electrical Engineering', " +
-                    "'be150'," +
-                    "'The circuits lab (Baskin 150) is used for beginning instruction in analog electronics, both for EE 101/L (Circuits) and BME 51A+B (Applied Electronics for Bioengineers). " +
-                    "\n\nThe class shown here is one section of BME 51A, doing their first amplifier lab: building an instrumentation amplifier for a pressure sensor for measuring air pressure in a blood-pressure cuff. " +
-                    "\n\nAll the bioengineering concentrations are required to do BME 51, as it provides a relatively quick way to gain practical engineering design experience and to understand the basics of interfacing biological systems to computers.'," +
-                    "'37.000358', '-122.063413');");
+                    "'be150'," + ee101Description +
+                    ", '37.000358', '-122.063413');");
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
                     + " VALUES (4,'Graduate Advising Office', 'Oakes Academic Building, Room 221', 'Graduate Division', " +
-                    "'defaultimage', 'The BSoE Graduate Advising office is available to help students, staff, and faculty with academic policy pertaining to graduate education at UCSC. This unit is responsible for processing petitions, TA assignments, committee nominations, advancement to candidacy, intake of theses and dissertations, conducting the degree checks to award all master’s and doctoral degrees, graduate, and navigating academic performance and progress." +
-                    "\n\nHow To Meet With a Graduate Advisor:  Advisors are available for both drop-in advising and appointments and are located in Oakes Academic Building, Room 221. If you anticipate needing more than 10 minutes with an advisor, we recommend making an appointment. You can schedule an appointment by visiting the Contacts & Hours page and select Schedule an Appointment with the advisor for your program. When visiting the Graduate Advising Office, you will be asked to sign-in with your name, the advisor you wish to see and if it is a scheduled or drop-in appointment. Drop-In advising hours are limited so please plan ahead as we can fill up quickly during peak times in the quarter." +
-                    "\n\nAdvising By Email:  When emailing the BSoE Advising staff please email from your UCSC email account and include your name, program, student ID and your question. Please do not email advisors to request an appointment." +
-                    "\n\nWe are happy to help with many things, but it is the student’s responsibility to come prepared. Please always refer to the Graduate Advising website as answers to many of your questions can be found here. We look forward to meeting with you soon!', '36.9896204', '-122.0649923');");
+                    "'defaultimage'," + graduateAdvisingDescription +", '36.9896204', '-122.0649923');");
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
                     + " VALUES (5,'Graduate Student Housing', 'Redwood Grove', 'Graduate Division', " +
-                    "'graduatehousing'," +
-                    "'Graduate Student Housing is an intimate community housing just 82 students, and is home to a diverse group, including students from all over the United States and the world. " +
-                    "\n\nThe apartments are set in a beautifully landscaped natural environment conveniently located adjacent to Science Hill, home to many of UCSCs main academic facilities. " +
-                    "\n\nEach apartment has four single bedrooms, living room, kitchen, dining room, and bathroom. " +
-                    "\n\nGround floor apartments have decks, while upper apartments have private balconies. '," +
-                    " '37.0000333', '-122.0642744');");
+                    "'graduatehousing'," + graduateHousingDescription + ", '37.0000333', '-122.0642744');");
 
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
                     + " VALUES (6,'Computer Networks Lab', 'Baskin Engineering 1 Room 301A', 'Computer Engineering', " +
-                    "'be301', 'BE301A – Computer Networks Lab: This lab is used by the University’s Computer Networking and Electrical Engineering courses. " +
-                    "Students in these courses receive hands-on experience with real-world networking equipment and concepts to prepare them for careers as network engineers. " +
-                    "\n\nThey use software such as Wireshark to observe packets as they travel through a computer network to understand how communication between routers, switches, and computers occur on Local Area Networks as well as the Internet. " +
-                    "\n\nAdditionally, the students are introduced to emerging concepts, such as Software Defined Networking, to prepare them for the Internet of the future.'," +
-                    " '37.000271', '-122.063057');");
+                    "'be301'," + be301Description +
+                    ", '37.000271', '-122.063057');");
 
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
                     + " VALUES (7,'Computational Genomics Lab', 'Baskin Engineering 2 Room 507', 'Bioengineering', " +
-                    "'defaultimage', 'Our research is currently focused on:\n\nBuilding technology to connect the institutional silos where genome information is now isolated by forging and implementing interoperable standards. We are a proud members of the Global Alliance for Genomics and Health.\n\nComparing the history of vertebrate genomes." +
-                    "\n\nWant to reconstruct a 65 million old genome from the genomes of its descendants? Talk to us! We love the Genome 10K, a project to sequence 10,000 vertebrate genomes.\n\nUsing next-next generation sequencing technology to create more complete, accurate and phased genomes." +
-                    "\n\nMaking it easy to discover and share portable, reproducible and scalable genomic workflows." +
-                    "\n\nAnalyzing massive genomic datasets using the cloud." +
-                    "\n\nBuild a human reference genome structure that contains all common variation as a universal basis for genomics." +
-                    "\n\nCompleting the library of human and mouse RNAs.', '37.000919', '-122.063080');");
+                    "'defaultimage', " + computationalGenomicsDescription + ", '37.000901', '-122.063175');");
 
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
                     + " VALUES (8,'Applied Optics Lab', 'Baskin Engineering 1 Room 268', 'Electrical Engineering', " +
-                    "'defaultimage', 'The main research theme in our group is single particle optics. We develop new, highly sensitive methods to study single particles with optical methods. We use these and other established techniques to gain new understanding of these particles and light-matter interactions in general. Due to the versatility of optical methods, we can investigate different types of particles." +
-                    "\n\nOur current focus areas are:\nSingle biomolecules (Integrated Optofluidics)\nSingle nanomagnets (Nano-magneto-optics)\nSingle photons (Atomic spectroscopy on a chip)" +
-                    "\n\nWe are affiliated with the California Institiute for Quantitative Biomedical Research (QB3), the Center for Biomolecular Science and Engineering (CBSE), and the Storage Systems Research Center (SSRC)." +
-                    "\n\nProfessor Schmidt directs the W.M. Keck Center for Nanoscale Optofluidics whose mission is to incorporate nanoscale features in optofluidic devices to enable new studies of bioparticles and biological processes.'," +
-                    " '37.000058', '-122.063369');");
+                    "'defaultimage'," + opticsLabDescription + ", '37.000058', '-122.063369');");
 
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
                     + " VALUES (9,'DANSER Lab', 'Baskin Engineering 1 Room XXX', 'Electrical Engineering', " +
-                    "'danser', 'DANSER is the Dynamics, Autonomous Navigation, Surface Engineering and Robotics Lab at University of California Santa Cruz." +
-                    "\n\nOur lab builds structurally compliant robots for applications including exosuits, exoskeletons, manipulators, prosthetics, and rovers. " +
-                    "\n\nTensegrity is a design principle that features compression elements suspended within a network of tension elements. This fusion results in a hybrid soft-rigid structure that easily complies with external stresses by distributing loads throughout the entire tension network." +
-                    "\n\nThis paradigm is particularly useful for developing robots that mimic musculoskeletal kinematics and dynamics. We have chosen to apply these ideas to our own biomechanically-oriented projects.'," +
-                    " '37.000095', '-122.063183');");
+                    "'danser'," + danserDescription + ", '37.000095', '-122.063183');");
 
             myDB.execSQL("INSERT INTO "
                     + TableName
@@ -341,13 +352,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
-                    + " VALUES (12,'Human Genome Sequencing Lab', 'Baskin Engineering 1 Room 210', 'Bioengineering', " +
+                    + " VALUES (12,'Human Genomics Institute', 'Baskin Engineering 2 Room 501', 'Bioengineering', " +
                     "'defaultimage', 'On June 22, 2000, UCSC and the other members of the International Human Genome Project consortium completed the first working draft of the human genome assembly, forever ensuring free public access to the genome and the information it contains. A few weeks later, on July 7, 2000, the newly assembled genome was released on the web at http://genome.ucsc.edu, along with the initial prototype of a graphical viewing tool, the UCSC Genome Browser." +
                     "\n\nUC Santa Cruz possesses particular strength in bioinformatics--the myriad ways to probe and analyze biological data by using computational, mathematical, and statistical approaches.\n\nThe largest product of this expertise is the UCSC Genome Browser, which serves as an interactive web-based microscope that allows researchers to view all 23 chromosomes of the human genome at any scale, from a full chromosome down to an individual nucleotide. The genome sequences on display have been analyzed and annotated, and they are aligned with the genomes of dozens of other species that are also displayed on the UCSC browser. Biomedical researchers throughout the world use this browser extensively as they seek to understand the vast amount of information contained in the genome sequences, to probe them with new experimental and informatics methodologies, and ultimately to decode the genetic program of life.\n\nFar from simply displaying the genetic code, the UCSC browser brings the code to life by aligning relevant areas with experimental and computational data and images. It also links to international databases, giving researchers instant access to deeper information about the genome. An experienced user can form a hypothesis and verify it in minutes using this tool.\n\nThe browser platform has multiple potential uses that can improve diagnosis, prevention, and cures for disease. Spin-offs include the following:" +
                     "\n\nThe HIV Data Browser" +
                     "\n\nThe UCSC Cancer Genomics Browser" +
-                    "\n\nThe data collection center for the international ENCODE project', '37.000372', '-122.063437');");
-
+                    "\n\nThe data collection center for the international ENCODE project', '37.000919', '-122.063080');");
             myDB.execSQL("INSERT INTO "
                     + TableName
                     + " (id, title, location, major, image, description, latitude, longitude)"
@@ -448,18 +458,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         switch(major) {
             case "Computer Science":
                 System.out.println("HUE_BLUE: " + BitmapDescriptorFactory.HUE_BLUE);
-                return BitmapDescriptorFactory.HUE_BLUE;
+                return BitmapDescriptorFactory.HUE_GREEN;
             case "Computer Engineering":
                 System.out.println("HUE_AZURE: " + BitmapDescriptorFactory.HUE_AZURE);
-                return HUE_AZURE;
+                return BitmapDescriptorFactory.HUE_ORANGE;
             case "Electrical Engineering":
-                return BitmapDescriptorFactory.HUE_GREEN;
-            case "Computer Science Game Design":
+                return BitmapDescriptorFactory.HUE_BLUE;
+            case "CS: Game Design":
                 return BitmapDescriptorFactory.HUE_MAGENTA;
             case "Graduate Division":
                 return BitmapDescriptorFactory.HUE_YELLOW;
             case "Bioengineering":
-                return BitmapDescriptorFactory.HUE_CYAN;
+                return BitmapDescriptorFactory.HUE_ROSE;
             default:
                 return BitmapDescriptorFactory.HUE_RED;
         }
@@ -527,7 +537,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.setOnMarkerClickListener(this);
         LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
         try {
-            System.out.println("hello");
             ActivityCompat.requestPermissions(this,new String[]{ACCESS_FINE_LOCATION}, 1);
 
             Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
